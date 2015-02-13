@@ -1,5 +1,5 @@
-Msc. Thesis for Randy Saborio
-=============================
+Msc. thesis of Randy Saborio
+============================
 
 Latex folder contains all LaTex source documents of the thesis and PDF folder contains the compiled version of it.
 
