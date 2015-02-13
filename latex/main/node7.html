@@ -1,0 +1,149 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>¿Porqu&#233; la visi&#243;n artificial es tan dif&#237;cil?</TITLE>
+<META NAME="description" CONTENT="¿Porqu&#233; la visi&#243;n artificial es tan dif&#237;cil?">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node8.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node6.html">
+<LINK REL="next" HREF="node8.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html231"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html227"
+  HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html221"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html229"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html232"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Up:</B> <A NAME="tex2html228"
+  HREF="node6.html">Visi&#243;n artificial</A>
+<B> Previous:</B> <A NAME="tex2html222"
+  HREF="node6.html">Visi&#243;n artificial</A>
+ &nbsp; <B>  <A NAME="tex2html230"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00421000000000000000">
+¿Porqu&#233; la visi&#243;n artificial es tan dif&#237;cil?</A>
+</H2>
+En la visi&#243;n artificial, una computadora recibe una matriz de n&#250;meros que representa la imagen capturada por la c&#225;mara y nada m&#225;s. No existen mecanismos empotrados que permitan reconocer patrones, no existen mecanismos automatizados que permitan controlar la apertura o el enfoque del lente, y finalmente, no existe un control cruzado de asociaciones hacia años de experiencia como en el caso de un ser humano.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:WhatComputersSee"></A><A NAME="690"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.2:</STRONG>
+Para una computadora, el espejo retrovisor del carro es simplemente una matriz de n&#250;meros. Imagen tomada del libro <SPAN  CLASS="textit">Learning OpenCV</SPAN> &#169;[<A
+ HREF="node25.html#Bradski_Kaehler_2008">4</A>].</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><IMG
+  WIDTH="1310" HEIGHT="843" ALIGN="BOTTOM" BORDER="0"
+ SRC="./fig1.png"
+ ALT="Image fig1"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Utilizando &#250;nicamente la informaci&#243;n brindada por una o m&#225;s im&#225;genes, se debe aplicar una serie de t&#233;cnicas para determinar e interpretar su contenido y en el caso de procesos tridimensionales, recuperar la dimensi&#243;n perdida (profundidad). La Figura&nbsp;<A HREF="#fig:WhatComputersSee">1.2</A> muestra la imagen de un autom&#243;vil. En esa figura el ser humano es capaz de identificar f&#225;cilmente el retrovisor del lado del conductor. Lo que una computadora <SPAN  CLASS="textit">ve</SPAN> es simplemente una matriz de n&#250;meros. Cada uno de los n&#250;meros de esa matriz posee un amplio rango de <SPAN  CLASS="textit">ruido</SPAN> y por lo tanto brinda muy poca informaci&#243;n, pero esa matriz es todo lo que la computadora <SPAN  CLASS="textit">ve</SPAN>.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:2Dto3Dambiguity"></A><A NAME="691"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.3:</STRONG>
+Dada una vista bidimensional (2D) de un mundo tridimensional (3D), no existe una &#250;nica o definitiva forma de reconstruir la señal 3D.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><IMG
+  WIDTH="749" HEIGHT="416" ALIGN="BOTTOM" BORDER="0"
+ SRC="./2dto3dambiguity.png"
+ ALT="Image 2dto3dambiguity"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+Dada una vista bidimensional (2D) de un mundo tridimensional (3D), no existe una forma &#250;nica o definitiva de reconstruir la señal 3D. De hecho el problema, es formalmente imposible de resolver [<A NAME="tex2html233" target="contents"
+  HREF="node25.html#Hartley_Zisserman_2003">17</A>,<A NAME="tex2html234" target="contents"
+  HREF="node25.html#Faugeras_Luong_2001">12</A>,<A NAME="tex2html235" target="contents"
+  HREF="node25.html#Bradski_Kaehler_2008">4</A>]. La misma imagen 2D puede representar una colecci&#243;n infinita de escenas 3D, a&#250;n cuando los datos sean perfectos. La Figura&nbsp;<A HREF="#fig:2Dto3Dambiguity">1.3</A> muestra el problema de ambiguedad al reconstruir un cubo tridimensional a partir de una imagen bidimensional. Generalmente, los datos 2D se encuentran corruptos por ruido y distorsiones [<A NAME="tex2html236" target="contents"
+  HREF="node25.html#Thong_Sim_Phang_2001">35</A>,<A NAME="tex2html237" target="contents"
+  HREF="node25.html#Freeman_Szeliski_2006">15</A>] provenientes del mundo real (clima, luz, reflecci&#243;n, movimientos, sombras), de imperfecciones en el lente y construcci&#243;n mec&#225;nica de la c&#225;mara, del ruido el&#233;ctrico en el sensor u otros dispositivos electr&#243;nicos y de la compresi&#243;n de la imagen despu&#233;s de ser capturada [<A NAME="tex2html238" target="contents"
+  HREF="node25.html#Faugeras_Luong_2001">12</A>,<A NAME="tex2html239" target="contents"
+  HREF="node25.html#Szeliski_2010">34</A>,<A NAME="tex2html240" target="contents"
+  HREF="node25.html#Shah_1983">31</A>].
+
+<P>
+A pesar de estas limitaciones, es posible utilizar conocimiento contextual adicional al diseñar un sistema pr&#225;ctico, con tal de lidiar con los problemas impuestos por sensores visuales.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html231"
+  HREF="node8.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html227"
+  HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html221"
+  HREF="node6.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html229"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html232"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Up:</B> <A NAME="tex2html228"
+  HREF="node6.html">Visi&#243;n artificial</A>
+<B> Previous:</B> <A NAME="tex2html222"
+  HREF="node6.html">Visi&#243;n artificial</A>
+ &nbsp; <B>  <A NAME="tex2html230"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Randy Saborio
+2012-02-25
+</ADDRESS>
+</BODY>
+</HTML>

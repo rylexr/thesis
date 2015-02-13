@@ -1,0 +1,21 @@
+\chapter{An\'{a}lisis de resultados}
+\label{chap:analisis}
+\epigraph{The falsification of scientific data or analysis is always a serious matter.}{Ed Markey}
+
+En este cap\'{i}tulo se detalla el an\'{a}lisis de los resultados obtenidos durante las pruebas realizadas en la secci\'{o}n anterior as\'{i} como las relaciones encontradas a partir de esos datos.
+
+\section{An\'{a}lisis}
+De los resultados mostrados en las pruebas que eval\'{u}an la resoluci\'{o}n de las im\'{a}genes vs. el tiempo que toma la reconstrucci\'{o}n (figuras  ~\ref{fig:ChartCL1}, ~\ref{fig:ChartCM1}, ~\ref{fig:ChartGL1} y ~\ref{fig:ChartGM1}), se determin\'{o} que conforme la resoluci\'{o}n incrementa, el tiempo total de la reconstrucci\'{o}n incrementa. Con tal de ser m\'{a}s preciso en esta afirmaci\'{o}n se debe decir que a mayor cantidad de puntos detectados en las im\'{a}genes durante la fase de rastreo denso, mayor es el tiempo que toma procesarlos y por ende, mayor es el tiempo que toma la reconstrucci\'{o}n. La evidencia de esta relaci\'{o}n se nota m\'{a}s claramente en las figuras ~\ref{fig:FeatureVsTime1} y ~\ref{fig:FeatureVsTime2}, donde a pesar de utilizar una misma resoluci\'{o}n durante las pruebas, el tiempo de reconstrucci\'{o}n disminuye hasta en un 32\% en uno de los casos (resoluci\'{o}n a 800x600) debido a la diferencia geom\'{e}trica que existe entre los objetos reconstruidos. Particularmente y por sus espacios vac\'{i}os, las im\'{a}genes del objeto de las columnas Griegas generan una cantidad menor de puntos que las im\'{a}genes del castillo.
+
+Se encontr\'{o} evidencia de que la calibraci\'{o}n influye considerablemente en la reconstrucci\'{o}n y por lo tanto, es considerada una de las fases m\'{a}s importantes de todo el proceso. Como se mencion\'{o} anteriormente, si la calibraci\'{o}n falla los resultados obtenidos al finalizar la reconstrucci\'{o}n ser\'{a}n err\'{o}neos y el resultado final no se parecer\'{a} en nada al objeto que se est\'{e} reconstruyendo, como se puede observar en las figuras ~\ref{fig:WrongCalibration1} y ~\ref{fig:WrongCalibration2}. Con tal de minimizar este problema se incorporaron puntos de chequeo para validar que los c\'{a}lculos obtenidos durante esta fase no sean completamente err\'{o}neos. Sin embargo, la incorporaci\'{o}n de estos puntos no garantiza que todas las reconstrucciones dar\'{a}n resultados satisfactorios. Factores como poca luz, detecci\'{o}n pobre del flujo \'{o}ptico, poco o mucho desplazamiento espacial entre im\'{a}genes, entre otros, tambi\'{e}n afectan la reconstrucci\'{o}n.
+
+En la prueba que se muestra en la figura ~\ref{fig:CalibrationQuality}, el porcentaje de reconstrucciones fallidas se debi\'{o} a factores externos como los mencionados anteriormente y no a la c\'{a}mara ni al proceso de calibraci\'{o}n en s\'{i}. Uno de los factores que m\'{a}s afect\'{o} fue la diferencia de luz entre los pares de im\'{a}genes estereosc\'{o}picas debido a que la t\'{e}cnica no contempla controlar el auto-ajuste del foco ni el auto-balance de blancos de las c\'{a}maras durante las capturas.
+
+No se encontr\'{o} evidencia que indique que la utilizaci\'{o}n de un tipo particular de c\'{a}mara (buena o mala calidad) afecta el proceso, la calidad o el tiempo de reconstrucci\'{o}n. De los resultados se desprende que la calidad de la reconstrucci\'{o}n no est\'{a} determinada por el tipo de c\'{a}mara que se utilice. Tambi\'{e}n se desprende que las diferencias encontradas en los tiempos de reconstrucci\'{o}n de las pruebas realizadas con la c\'{a}mara Logitech y la c\'{a}mara Minoru son despreciables en la mayor\'{i}a de los casos.
+
+Finalmente, la hip\'{o}tesis que defiende esta tesis dice que \textbf{es posible reconstruir r\'{a}pidamente un objeto tridimensional a partir de, \'{u}nicamente, la informaci\'{o}n contenida en una secuencia de im\'{a}genes que provienen de una c\'{a}mara convencional de bajo costo y utilizando una serie de t\'{e}cnicas del campo de la visi\'{o}n artificial}. A pesar de las pruebas realizadas, no se encontró evidencia que indique lo contrario y por lo tanto, se asume cierta.
+
+%\section{Modelo matem\'{a}tico}
+%@TODO Torres??
+
+%@TODO resumen del capitulo

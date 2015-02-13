@@ -1,0 +1,65 @@
+\chapter{Descripci\'{o}n general del experimento}
+\epigraph{Simplicity is prerequisite for reliability.}{Edsger W. Dijkstra}
+
+@TODO parrafo de intro
+
+La t\'{e}cnica presentada en esta tesis se basa en el mecanismo de estructura a partir del movimiento (del ingl\'{e}s \textit{Structure from Motion}), proceso que involucra estimar simult\'{a}neamente la geometr\'{i}a 3D (estructura) y la posici\'{o}n de la c\'{a}mara (movimiento) \cite{Ullman_1979,Szeliski_2010,Hartley_Zisserman_2003}. La t\'{e}cnica convierte r\'{a}pidamente secuencias de imágenes 2D de un objeto 3D en una serie de nubes densas de puntos tridimensionales, los cuales son la base para la reconstrucción tridimensional de un objeto. La conversi\'{o}n de im\'{a}genes 2D en un modelo 3D se inicia con una fase de calibraci\'{o}n de la c\'{a}mara, la cual es necesaria para determinar sus par\'{a}metros intr\'{i}nsecos y extr\'{i}nsecos. Posteriormente, se procede a calcular el movimiento entre dos cámaras (vistas) utilizando pares de imágenes estereoscópicas. Finalmente, se procede a determinar la profundidad por medio de triangulaci\'{o}n. 
+
+La t\'{e}cnica propuesta permite la r\'{a}pida generaci\'{o}n de nubes densas tridimensionales utilizando \'{u}nicamente secuencias de im\'{a}genes del objeto a reconstruir. Para lograr tal cometido, se cre\'{o} un algoritmo de pareo denso basado en la detecci\'{o}n del flujo \'{o}ptico en lugar del tradicional pareo de caracter\'{i}sticas sobresalientes. El proceso de \textit{bundle adjusment}, registraci\'{o}n, \textit{meshing} y reconstrucci\'{o}n de la superficie no se contempla en esta tesis pero ser\'{a}n explorados en trabajo futuro.
+
+Para la reconstrucci\'{o}n se utiliza una cámara tipo webcam cuya posici\'{o}n es fija, una base giratoria donde se coloca el objeto a reconstruir y una computadora personal. No se hace ning\'{u}n tipo de suposici\'{o}n acerca de la geometr\'{i}a del objeto y no se conoce ning\'{u}n tipo de informaci\'{o}n del objeto \textit{a priori}. El \'{u}nico requerimiento particular de la t\'{e}cnica es la necesidad de que el objeto sea r\'{i}gido y que tenga una textura suficientemente no uniforme (???). 
+
+Conforme el objeto va rotando frente a la c\'{a}mara, se toma una serie de vistas clave (del ingl\'{e}s \textit{keyframes}) las cuales se utilizan para realizar la auto-calibraci\'{o}n del sistema. Posteriormente, se procede con la fase r\'{a}pida de estimaci\'{o}n del movimiento en la cual se determinan los valores necesarios para reconstruir la posici\'{o}n y orientaci\'{o}n de la c\'{a}mara. Finalmente, se procede con la fase de recuperaci\'{o}n de la profundidad v\'{i}a triangulaci\'{o}n, la cual se utiliza para generar la nube de puntos tridimensionales. Generalmente, todo el proceso toma unos cuantos segundos.
+
+
+\section{Hip\'{o}tesis}
+La hip\'{o}tesis que se defiende en esta tesis es que \textbf{es posible reconstruir r\'{a}pidamente un objeto tridimensional a partir de, \'{u}nicamente, la informaci\'{o}n contenida en una secuencia de im\'{a}genes que provienen de una c\'{a}mara convencional de bajo costo y utilizando una serie de t\'{e}cnicas del campo de la visi\'{o}n artificial.}
+
+
+\section{Objetivo general}
+\begin{itemize}
+\item Desarrollar una t\'{e}cnica pasiva que permita la reconstrucci\'{o}n rápida de un objeto tridimensional r\'{i}gido\footnote[1]{Enti\'{e}ndase rígido como un objeto cuya estructura geom\'{e}trica no var\'{i}a de una imagen a otra}, utilizando una c\'{a}mara convencional de bajo costo m\'{a}s una serie de t\'{e}cnicas del campo de la visi\'{o}n artificial.
+\end{itemize}
+
+\section{Objetivos específicos}
+\begin{itemize*}
+\item Desarrollar algoritmos para reconstruir el objeto 3D conforme la informaci\'{o}n de \'{e}ste es capturada.
+\item Establecer la relaci\'{o}n matem\'{a}tica entre:
+\subitem Resoluci\'{o}n de im\'{a}genes y tiempo de reconstrucci\'{o}n 3D.
+\subitem Caracter\'{i}sticas f\'{i}sicas (tamaño, forma, color, textura) del objeto y tiempo de reconstrucci\'{o}n 3D.
+\subitem Calibraci\'{o}n y calidad de la reconstrucci\'{o}n 3D.
+\item Analizar y valorar t\'{e}cnicas actuales de reconstrucci\'{o}n 3D.
+\item Mantener considerablemente bajo el costo global del sistema.
+\end{itemize*}
+
+\section{Aportes}
+Este trabajo proveer\'{a} informaci\'{o}n, herramientas y metodolog\'{i}as relacionadas con la evaluaci\'{o}n de t\'{e}cnicas r\'{a}pidas de reconstrucci\'{o}n de objetos tridimensionales, las cuales pueden servir como base para trabajo futuro.
+
+Tambi\'{e}n proveer\'{a} investigaci\'{o}n de calidad en el \'{a}rea de la visi\'{o}n artificial, con la esperanza de motivar futura investigaci\'{o}n en \'{e}sta. La visi\'{o}n artificial se ha vuelto relevante en Costa Rica en \'{a}reas como la seguridad vial e industrial. Tambi\'{e}n puede brindar aporte a la educaci\'{o}n, la industria de diseño gr\'{a}fico, diseño publicitario, la arquitectura y muchas m\'{a}s.
+
+\section{Alcances y limitaciones}
+Se propone crear un prototipo funcional pr\'{a}ctico para realizar una reconstrucci\'{o}n r\'{a}pida de un objeto tridimensional r\'{i}gido. El prototipo completo deber\'{a} estar compuesto \'{u}nicamente por una o m\'{a}s c\'{a}maras tipo \emph{webcam}, un computador de escritorio y los algoritmos necesarios para la reconstrucci\'{o}n.
+
+Este trabajo no contemplar\'{a} los siguientes aspectos (pueden ser explorados en futuros trabajos):
+\begin{itemize*}
+\item Reconstrucci\'{o}n de objetos con estructuras no r\'{i}gidas.
+\item Reconstrucci\'{o}n de objetos con un ancho, alto y profundidad mayor a 30cm.
+\item Reconstrucci\'{o}n de objetos con texturas muy uniformes.
+\item Reconstrucci\'{o}n de objetos con estructuras muy irregulares.
+\item Etapas posteriores a la triangulaci\'{o}n (\emph{bundle adjusment}, \emph{texturing}).
+\item Utilizaci\'{o}n de equipo especializado (c\'{a}maras infrarrojas, de profundidad, proyectores, entre otros) o computadores de alto rendimiento.
+\end{itemize*}
+
+@TODO mejorar?? ampliar ??
+
+
+%Como parte de los objetivos es mantener bajo el costo global del sistema as\'{i} como el tiempo de procesamiento, se opt\'{o} por desarrollar una t\'{e}cnica %monocular (una c\'{a}mara) de reconstrucci\'{o}n tridimensional. 
+
+%La sección~\ref{chap:calibracion} describe la técnica utilizada para la auto-calibración del sistema de captura utilizando secuencias de imágenes monoculares no calibradas. La sección~\ref{chap:profundidad} describe la técnica utilizada para la estimación de la profundidad a partir de un par de imágenes. Finalmente, la sección~\ref{chap:reconstruccion} describe la técnica utilizada para la reconstruccion tridimensional del objeto.
+
+
+%La \textbf{matriz escencial} es una matriz de 3x3, la cual relaciona puntos correspondientes en pares de imágenes estereo asumiendo que las cámaras satisfacen el modelo \emph{pinhole} de cámara. Se le considera precusora de la \textbf{matriz fundamental}. Ambas matrices pueden ser utilizadas para establecer las restricciones entre correspondientes puntos en imágenes pero la matriz escencial sólo puede ser utilizada cuando las cámaras se encuentran calibradas \cite{Hartley_Zisserman_2003}.
+
+%Dado un punto en una imagen, el multiplicar por la matriz fundamental/escencial nos dice la línea epipolar a buscar en la segunda imagen.
+
+%The essential matrix can be seen as a precursor to the fundamental matrix. Both matrices can be used for establishing constraints between matching image points, but the essential matrix can only be used in relation to calibrated cameras since the inner camera parameters must be known in order to achieve the normalization. If, however, the cameras are calibrated the essential matrix can be useful for determining both the relative position and orientation between the cameras and the 3D position of corresponding image points.

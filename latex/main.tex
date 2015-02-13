@@ -1,0 +1,140 @@
+% Two side to save paper
+% openrigth means to put the chapter tittle on the right pages 
+\documentclass[12pt,letterpaper,twoside,openright]{book}
+
+% We define some strings that will use along
+\def \thesiskeywords {3D, reconstruction, computer vision, structure from motion}
+\def \pdfauthor {Randy Saborio}
+\def \thesistitle {Reconstrucci\'{o}n r\'{a}pida de objetos tridimensionales}
+% Custom-commands and definitions
+% See this file for defining the keywords that will show up on the pdf file
+\input{body/header.tex}
+
+% Wrong separated words
+\hyphenation{des-pu\'{e}s}
+\hyphenation{mo-de-la-do}
+\hyphenation{fu-sio-nar-se}
+\hyphenation{re-gis-tra-ci\'{o}n}
+\hyphenation{bi-di-men-sio-nal}
+\hyphenation{bi-di-men-sio-na-les}
+\hyphenation{tri-di-men-sio-nal}
+\hyphenation{tri-di-men-sio-na-les}
+\hyphenation{re-a-li-zar}
+\hyphenation{re-a-li-z\'{o}}
+\hyphenation{re-a-li-za-do}
+\hyphenation{re-a-li-za-das}
+\hyphenation{es-te-re-os-c\'{o}-pi-cas}
+\hyphenation{par-ti-cu-lar}
+\hyphenation{pro-ble-ma}
+\hyphenation{ne-ce-sa-rio}
+\hyphenation{ne-ce-sa-rios}
+\hyphenation{mo-de-lo}
+\hyphenation{mo-de-los}
+\hyphenation{me-ca-nis-mo}
+\hyphenation{i-te-ra-ti-vo}
+\hyphenation{grie-gas}
+\hyphenation{r\'{a}-pi-da}
+\hyphenation{pro-pues-to}
+\hyphenation{ca-li-dad}
+\hyphenation{es-pe-cia-li-za-do}
+\hyphenation{di-fe-ren-te}
+\hyphenation{di-fe-ren-tes}
+\hyphenation{re-cons-truc-cio-nes}
+\hyphenation{re-cons-truc-ci\'{o}n}
+\hyphenation{pi-xe-les}
+\hyphenation{fa-lla}
+\hyphenation{va-lo-res}
+\hyphenation{lo-gi-tech}
+\hyphenation{ge-ne-ra-li-za-do}
+\hyphenation{ha-bi-li-da-des}
+\hyphenation{per-so-nal}
+\hyphenation{ca-rac-te-r\'{i}s-ti-cas}
+\hyphenation{si-guien-do}
+\hyphenation{pa-r\'{a}-me-tros}
+\hyphenation{pro-pues-ta}
+\hyphenation{re-so-lu-cio-nes}
+\hyphenation{ge-o-me-tr\'{i}-a}
+\hyphenation{ca-li-bra-ci\'{o}n}
+\hyphenation{di-fe-ren-cia}
+\hyphenation{ma-yor}
+\hyphenation{ma-yo-r\'{i}a}
+\hyphenation{ta-re-as}
+\hyphenation{de-sa-rro-llo}
+\hyphenation{res-pe-tar}
+\hyphenation{si-mi-li-tud}
+\hyphenation{ob-te-ner}
+\hyphenation{re-fe-ren-cia}
+\hyphenation{au-to-ma-ti-za-ci\'{o}n}
+\hyphenation{li-mi-ta-cio-nes}
+\hyphenation{sa-tis-fa-cen}
+
+\begin{document}
+
+% This is the first part of the document (frontmatter), use Roman numeration
+\frontmatter
+
+% Simple style
+\pagestyle{empty}
+
+\input{body/cover.tex}
+%\input{body/dedication.tex}
+\input{body/abstract.tex}
+
+\newpage
+\thispagestyle{empty}
+\mbox{}
+
+\newpage
+\thispagestyle{empty}
+\begin{textblock*}{\paperwidth}(0mm,0mm)
+   \noindent\includegraphics[width=\paperwidth,height=\paperheight]{images/aprobacion.jpg}
+\end{textblock*}
+\mbox{}\newpage
+
+
+\tableofcontents
+\listoffigures
+%\listoftables
+% Table of Symbols and Nomenclature
+%\printnomenclature
+
+\mainmatter
+% Use double space
+\doublespacing
+% Now fancy style
+\pagestyle{fancy}
+% Left the right header clean
+\rhead{}
+
+\input{body/chapter1}
+\input{body/chapter2}
+\input{body/chapter3}
+\input{body/chapter4}
+\input{body/chapter5}
+\input{body/chapter6}
+\input{body/chapter7}
+\input{body/chapter8}
+\input{body/chapter9}
+
+% Appendixes
+\appendix 
+\input{body/appendix1}
+
+% Final pages
+\backmatter
+
+% Use single space
+\singlespacing
+
+% Bibliography
+\renewcommand{\bibname}{Referencias}
+\cleardoublepage
+\bibliographystyle{plainnat}
+\refstepcounter{chapter}
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{common/references.bib}
+
+% Acronyms
+\input{body/acronyms.tex}
+
+\end{document}

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Estimaci&#243;n de la profundidad</TITLE>
+<META NAME="description" CONTENT="Estimaci&#243;n de la profundidad">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node11.html">
+<LINK REL="previous" HREF="node9.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node11.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html303"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html299"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html293"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html301"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html304"
+  HREF="node11.html">Construcci&#243;n del modelo tridimensional</A>
+<B> Up:</B> <A NAME="tex2html300"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Previous:</B> <A NAME="tex2html294"
+  HREF="node9.html">Calibraci&#243;n del sistema de</A>
+ &nbsp; <B>  <A NAME="tex2html302"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00422200000000000000">
+Estimaci&#243;n de la profundidad</A>
+</H3>
+La estimaci&#243;n de la profundidad se realiza utilizando pares de im&#225;genes estereosc&#243;picas, obtenidas por ejemplo por el sensor <SPAN  CLASS="textit">CCD</SPAN> de una c&#225;mara. Para estimar un modelo tridimensional de la escena se debe encontrar pareos entre pixeles de las im&#225;genes y convertir sus posiciones 2D en posiciones 3D [<A NAME="tex2html305" target="contents"
+  HREF="node25.html#Cyganek_Siebert_2009">9</A>,<A NAME="tex2html306" target="contents"
+  HREF="node25.html#Szeliski_2010">34</A>,<A NAME="tex2html307" target="contents"
+  HREF="node25.html#Shah_1983">31</A>]. La distancia entre un pixel en una imagen y el mismo pixel en la otra imagen se le conoce como <SPAN  CLASS="textit">disparidad</SPAN> [<A NAME="tex2html308" target="contents"
+  HREF="node25.html#Cyganek_Siebert_2009">9</A>,<A NAME="tex2html309" target="contents"
+  HREF="node25.html#Forsyth_Ponce_2002">14</A>,<A NAME="tex2html310" target="contents"
+  HREF="node25.html#Shah_1983">31</A>]. Tal distancia es inversamente proporcional a la distancia de la profundidad y puede ser calculada por triangulaci&#243;n. Al resultado final de este proceso se le conoce como una nube de puntos tridimensionales (del ingl&#233;s <SPAN  CLASS="textit">Point cloud</SPAN>). La Figura&nbsp;<A HREF="#fig:PointCloud">1.6</A> muestra una nube de puntos calculados a partir de una secuencia de im&#225;genes no calibradas.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:PointCloud"></A><A NAME="706"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.6:</STRONG>
+Nube de puntos calculada a partir de una secuencia de im&#225;genes no calibradas. Imagen tomada de <TT><A NAME="tex2html9"
+  HREF="http://cmp.felk.cvut.cz/projects/is3d/">http://cmp.felk.cvut.cz/projects/is3d/</A></TT> &#169;.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><IMG
+  WIDTH="1270" HEIGHT="997" ALIGN="BOTTOM" BORDER="0"
+ SRC="./point_cloud_b.png"
+ ALT="Image point_cloud_b"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html303"
+  HREF="node11.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html299"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html293"
+  HREF="node9.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html301"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html304"
+  HREF="node11.html">Construcci&#243;n del modelo tridimensional</A>
+<B> Up:</B> <A NAME="tex2html300"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Previous:</B> <A NAME="tex2html294"
+  HREF="node9.html">Calibraci&#243;n del sistema de</A>
+ &nbsp; <B>  <A NAME="tex2html302"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Randy Saborio
+2012-02-25
+</ADDRESS>
+</BODY>
+</HTML>

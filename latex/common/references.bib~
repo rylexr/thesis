@@ -1,0 +1,82 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF-8
+
+@BOOK{Jahne_Haussecker_Geibler_1999,
+  title = {Handbook of computer vision applications, Vol. 3},
+  publisher = {Academic Press},
+  year = {1999},
+  author = {Jähne, B and Haussecker, H and Geißler, P},
+  volume = {3},
+  journal = {Imaging},
+  url = {http://scholar.google.com/scholar?hl=en&btnG=Search&q=intitle:handbook+of+COMPUTER+VISION+AND+applications#2}
+}
+
+@BOOK{Szeliski_2010,
+  title = {Computer Vision : Algorithms and Applications},
+  publisher = {Springer},
+  year = {2010},
+  author = {Szeliski, Richard},
+  journal = {Computer},
+  url = {http://books.google.com/books?hl=en&lr=&id=bXzAlkODwa8C&oi=fnd&pg=PR9&dq=Computer+Vision+:+Algorithms+and+Applications&ots=gYY592oyHJ&sig=plOeEaFaDpsKFQsLweMS3eIXATY}
+}
+
+@BOOK{Bradski_Kaehler_2008,
+  title = {Learning OpenCV},
+  publisher = {OʼReilly},
+  year = {2008},
+  editor = {Loukides, MikeEditor},
+  author = {Bradski, Gary and Kaehler, Adrian},
+  volume = {16},
+  number = {3},
+  pages = {577},
+  journal = {Robotics Automation Magazine IEEE},
+  url = {http://oreilly.com/catalog/9780596516130}
+}
+
+@BOOK{Faugeras_1993,
+  title = {Three-dimensional computer vision: a geometric viewpoint},
+  publisher = {MIT Press},
+  year = {1993},
+  author = {Faugeras, Olivier},
+  pages = {695},
+  journal = {Artificial Intelligence},
+  url = {http://portal.acm.org/citation.cfm?id=171658}
+}
+
+@BOOK{Faugeras_Luong_2001,
+  title = {The Geometry of Multiple Images: The Laws That Govern The Formation
+	of Images of A Scene and Some of Their Applications},
+  publisher = {MIT Press},
+  year = {2001},
+  author = {Faugeras, Olivier and Luong, Quang-Tuan and Papadopoulou, T.},
+  address = {Cambridge, MA, USA},
+  isbn = {0262062208}
+}
+
+@BOOK{Forsyth_Ponce_2002,
+  title = {Computer Vision: A Modern Approach},
+  publisher = {Prentice Hall},
+  year = {2002},
+  author = {Forsyth, David A and Ponce, Jean},
+  pages = {693},
+  journal = {Book},
+  url = {http://www.amazon.com/exe℅bidos/redirect?tag=citeulike07-20&path=ASIN/0130851981}
+}
+
+@BOOK{Hartley_Zisserman_2003,
+  title = {Multiple View Geometry in Computer Vision},
+  publisher = {Cambridge University Press},
+  year = {2003},
+  author = {Hartley, Richard and Zisserman, Andrew},
+  journal = {Book},
+  url = {http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=0521540518}
+}
+
+@MISC{wiki:xxx,
+  author = {Wikipedia},
+  title = {Computer vision --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Computer_vision&oldid=470961889}
+}
+

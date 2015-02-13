@@ -1,0 +1,37 @@
+\chapter{Algoritmo}
+\label{chap:algoritmo}
+\epigraph{An algorithm must be seen to be believed.}{Donald Knuth}
+
+%En este cap\'{i}tulo se describe el pseudoc\'{o}digo del algoritmo de reconstrucci\'{o}n r\'{a}pida propuesto en esta tesis. Adicionalmente, se brinda su an\'{a}lisis de complejidad y finalmente, las principales diferencias con t\'{e}cnicas similares de reconstrucci\'{o}n.
+
+En este cap\'{i}tulo se describe el pseudoc\'{o}digo del algoritmo de reconstrucci\'{o}n r\'{a}pida propuesto en esta tesis y posteriormente, las principales diferencias con t\'{e}cnicas similares de reconstrucci\'{o}n.
+
+\section{Pseudoc\'{o}digo}
+A continuaci\'{o}n se presenta un extracto del m\'{e}todo principal del algoritmo propuesto para la t\'{e}cnica r\'{a}pida de reconstrucci\'{o}n tridimensional. El pseudoc\'{o}digo completo se encuentra en el apartado de ap\'{e}ndices bajo la secci\'{o}n ~\ref{chap:apendice}. Cabe destacar que el experimento fue implementado con C++, Java y OpenCV.
+\newpage
+\begin{alltt}
+\textbf{reconstructor_3d}
+  ...
+  \textbf{ejecutar}()
+    calibrar_camara();
+    capturar_vistas();
+    pareo_de_puntos();
+    eliminar_pareos_erroneos();
+    encontrar_triangulacion_base();
+    \textbf{para} cada nueva vista \textbf{hacer}
+      recuperar_nueva_vista();
+    \textbf{fin}
+  \textbf{fin}
+\textbf{fin}
+\end{alltt}
+
+%\section{An\'{a}lisis de complejidad}
+%@TODO no se prometió hacerlo, Torres??
+
+\section{Novedad}
+Tradicionalmente, se utilizan t\'{e}cnicas de pareo de caracter\'{i}sticas sobresalientes en lugar de t\'{e}cnicas de rastreo denso para reconstrucci\'{o}n tridimensional. Esto se debe a que son consideradas m\'{a}s r\'{a}pidas, m\'{a}s estables y desempe\~nan mejor en im\'{a}genes que poseen una separaci\'{o}n espacial grande \cite{Liu_Cheng_2008,Peng_Chen_Zhou_Liu_2009,Wang_Quan_2008,Ying_Hong-e_Ben-zhi_2010}. Sin embargo, es conocido que el resultado de realizar una reconstrucci\'{o}n basada en pareo de caracter\'{i}sticas sobresalientes generalmente tiende a ser disperso (pocos puntos).
+
+La novedad de la t\'{e}cnica se encuentra en la utilizaci\'{o}n de algoritmos de rastreo denso de pixeles (\textit{Farnebäck}) en conjunto con una t\'{e}cnica pir\'{a}mide (\textit{FAST con pir\'{a}mide}) para el r\'{a}pido procesamiento de las im\'{a}genes y una r\'{a}pida triangulaci\'{o}n (\textit{iterative linear least squares}) para la generaci\'{o}n de la informaci\'{o}n tridimensional. Generalmente, el rastreo denso no es apto para ser utilizado en reconstrucci\'{o}n r\'{a}pida debido a la cantidad considerable de datos que hay que procesar, sin embargo como qued\'{o} demostrado en \'{e}ste documento la t\'{e}cnica propuesta permite obtener resultados de gran calidad en cuesti\'{o}n de unos cuantos segundos y sin la utilizaci\'{o}n de equipo especializado.
+
+%@TODO resumen del capitulo
+

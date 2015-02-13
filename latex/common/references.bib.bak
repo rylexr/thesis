@@ -1,0 +1,983 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF-8
+
+@ARTICLE{Adelson_Anderson_Bergen_Burt_Ogden_1984,
+  author = {Adelson, E H and Anderson, C H and Bergen, J R and Burt, P J and
+	Ogden, J M},
+  title = {Pyramid methods in image processing},
+  journal = {Engineer},
+  year = {1984},
+  volume = {29},
+  pages = {33–41},
+  number = {6},
+  publisher = {Citeseer},
+  url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.59.9419&rep=rep1&type=pdf}
+}
+
+@BOOK{atwood1997jtec,
+  title = {JTEC/WTEC Panel on Rapid Prototyping in Europe and Japan: Site reports},
+  publisher = {Published and distributed by Rapid Prototyping Association of the
+	Society of Manufacturing Engineers},
+  year = {1997},
+  author = {Atwood, C.L. and Prinz, F.B. and Rapid Prototyping Association of
+	the SME. and World Technology Evaluation Center (Loyola College in
+	Maryland)},
+  series = {JTEC Panel Reports},
+  isbn = {9781883712433},
+  url = {http://books.google.com.mx/books?id=bGAmPAAACAAJ}
+}
+
+@ARTICLE{Baarspul_1990,
+  author = {Baarspul, M},
+  title = {A review of flight simulation techniques},
+  journal = {Progress in Aerospace Sciences},
+  year = {1990},
+  volume = {27},
+  pages = {1--120},
+  number = {1},
+  url = {http://linkinghub.elsevier.com/retrieve/pii/0376042190900066}
+}
+
+@ARTICLE{Bardsley_2008,
+  author = {Bardsley, Daniel},
+  title = {A Practical Framework for 3D Reconstruction and Its Applications},
+  journal = {Analysis},
+  year = {2008},
+  number = {July}
+}
+
+@ARTICLE{Bay_Ess_Tuytelaars_Vangool_2008,
+  author = {Bay, H and Ess, A and Tuytelaars, T and Vangool, L},
+  title = {Speeded-Up Robust Features (SURF)},
+  journal = {Computer Vision and Image Understanding},
+  year = {2008},
+  volume = {110},
+  pages = {346--359},
+  number = {3},
+  publisher = {Elsevier},
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S1077314207001555}
+}
+
+@ARTICLE{Beardsley_Zisserman_Murray_1997,
+  author = {Beardsley, P A and Zisserman, A and Murray, D W},
+  title = {Sequential Updating of Projective and Affine Structure from Motion},
+  journal = {International Journal of Computer Vision},
+  year = {1997},
+  volume = {23},
+  pages = {235--259},
+  number = {3},
+  publisher = {Springer},
+  url = {http://www.springerlink.com/index/L8836070213193J7.pdf}
+}
+
+@INPROCEEDINGS{Beardsley963dmodel,
+  author = {Paul Beardsley and Paul Beardsley and Phil Torr and Phil Torr and
+	Andrew Zisserman and Andrew Zisserman},
+  title = {3D Model Acquisition from Extended Image Sequences},
+  year = {1996},
+  pages = {683--695},
+  publisher = {Springer-Verlag}
+}
+
+@BOOK{Bradski_Kaehler_2008,
+  title = {Learning OpenCV},
+  publisher = {O'Reilly},
+  year = {2008},
+  editor = {Loukides, MikeEditor},
+  author = {Bradski, Gary and Kaehler, Adrian},
+  volume = {16},
+  number = {3},
+  pages = {577},
+  journal = {Robotics Automation Magazine IEEE},
+  url = {http://oreilly.com/catalog/9780596516130}
+}
+
+@ARTICLE{Brostow_Shotton_Fauqueur_Cipolla_2008,
+  author = {Brostow, Gabriel J and Shotton, Jamie and Fauqueur, Julien and Cipolla,
+	Roberto},
+  title = {Segmentation and Recognition using Structure from Motion Point Clouds},
+  journal = {Computer Vision – ECCV 2008},
+  year = {2008},
+  volume = {5302},
+  pages = {1--14},
+  editor = {Forsyth, David and Torr, Philip and Zisserman, AndrewEditors},
+  publisher = {Springer},
+  url = {http://www.inf.ethz.ch/personal/gbrostow/ext/MotionSegRecECCV08.pdf}
+}
+
+@ARTICLE{burt_adelson_1095851,
+  author = {Burt, P.J. and Adelson, E.H.},
+  title = {The Laplacian Pyramid as a Compact Image Code},
+  journal = {Communications, IEEE Transactions on},
+  year = {1983},
+  volume = {31},
+  pages = {532-540},
+  number = {4},
+  doi = {10.1109/TCOM.1983.1095851},
+  issn = {0090-6778},
+  keywords = {Image coding;Data compression;Data structures;Entropy;Frequency;Image
+	coding;Image sampling;Laplace equations;Low pass filters;Pixel;Shape}
+}
+
+@ARTICLE{Burt198120,
+  author = {Peter J Burt},
+  title = {Fast filter transform for image processing },
+  journal = {Computer Graphics and Image Processing },
+  year = {1981},
+  volume = {16},
+  pages = {20 - 51},
+  number = {1},
+  doi = {10.1016/0146-664X(81)90092-7},
+  issn = {0146-664X},
+  url = {http://www.sciencedirect.com/science/article/pii/0146664X81900927}
+}
+
+@ARTICLE{Chen_Hou_Gou_Lu_2000,
+  author = {Chen, W and Hou, C and Gou, S and Lu, P},
+  title = {Computerized surgical simulation with 3D reconstruction of upper
+	limbs},
+  journal = {Sheng wu yi xue gong cheng xue za zhi Journal of biomedical engineering
+	Shengwu yixue gongchengxue zazhi},
+  year = {2000},
+  volume = {17},
+  pages = {292--294},
+  number = {3}
+}
+
+@PHDTHESIS{Chum_2005,
+  author = {Chum, O},
+  title = {Two-View Geometry Estimation by Random Sample and Consensus},
+  school = {Czech Technical University},
+  year = {2005},
+  journal = {Artificial Intelligence},
+  pages = {92},
+  url = {http://cmp.felk.cvut.cz/ftp/articles/matas/chum-phd05.pdf}
+}
+
+@ARTICLE{Cryer_Shah_1999,
+  author = {Cryer, J E and Shah, M},
+  title = {Shape-from-shading: a survey},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year = {1999},
+  volume = {21},
+  pages = {690--706},
+  number = {8},
+  publisher = {IEEE},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=784284}
+}
+
+@ARTICLE{Cui_Schuon_Chan_Thrun_Theobalt_2010,
+  author = {Cui, Yan and Schuon, Sebastian and Chan, Derek and Thrun, Sebastian
+	and Theobalt, Christian},
+  title = {3D Shape Scanning with a Time-of-Flight Camera},
+  journal = {Work},
+  year = {2010},
+  volume = {264},
+  pages = {1173--1180},
+  number = {5161},
+  publisher = {IEEE},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5540082}
+}
+
+@BOOK{Cyganek_Siebert_2009,
+  title = {An introduction to 3D computer vision techniques and algorithms},
+  publisher = {John Wiley \& Sons, Ltd},
+  year = {2009},
+  author = {Cyganek, B and Siebert, J P},
+  volume = {1},
+  pages = {504},
+  journal = {Techniques},
+  url = {http://dx.doi.org/10.1002/9780470699720}
+}
+
+@ARTICLE{Ding_Goshtasby_2001,
+  author = {Ding, Lijun and Goshtasby, Ardeshir},
+  title = {Canny Edge Detector},
+  journal = {Pattern Recognition},
+  year = {2001},
+  volume = {34},
+  pages = {721--725},
+  number = {3},
+  publisher = {Computer Science and Engineering Department Wright State University},
+  url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.103.7086}
+}
+
+@INPROCEEDINGS{F_Moreno_V_Lepetit,
+  author = {F.Moreno-Noguer and V.Lepetit and P.Fua},
+  title = {Accurate Non-Iterative O(n) Solution to the PnP Problem},
+  booktitle = {IEEE International Conference on Computer Vision},
+  year = {2007},
+  address = {Rio de Janeiro, Brazil},
+  month = {October}
+}
+
+@ARTICLE{Farneback_2003,
+  author = {Farnebäck, Gunnar},
+  title = {Two-Frame Motion Estimation Based on Polynomial Expansion},
+  journal = {International Journal of Computer Vision},
+  year = {2003},
+  volume = {2749},
+  pages = {363--370},
+  number = {x},
+  editor = {Bigun, Josef and Gustavsson, TomasEditors},
+  publisher = {Springer Berlin / Heidelberg},
+  url = {http://dx.doi.org/10.1007/3-540-45103-X_50}
+}
+
+@BOOK{Faugeras_1993,
+  title = {Three-dimensional computer vision: a geometric viewpoint},
+  publisher = {MIT Press},
+  year = {1993},
+  author = {Faugeras, Olivier},
+  pages = {695},
+  journal = {Artificial Intelligence},
+  url = {http://portal.acm.org/citation.cfm?id=171658}
+}
+
+@BOOK{Faugeras_Luong_2001,
+  title = {The Geometry of Multiple Images: The Laws That Govern The Formation
+	of Images of A Scene and Some of Their Applications},
+  publisher = {MIT Press},
+  year = {2001},
+  author = {Faugeras, Olivier and Luong, Quang-Tuan and Papadopoulou, T.},
+  address = {Cambridge, MA, USA},
+  isbn = {0262062208}
+}
+
+@ARTICLE{Faugeras_1992,
+  author = {Faugeras, Olivier D},
+  title = {What can be seen in three dimensions with an uncalibrated stereo
+	rig?},
+  journal = {European Conference on Computer Vision},
+  year = {1992},
+  volume = {588},
+  pages = {563--578},
+  publisher = {Springer-Verlag},
+  url = {http://www.springerlink.com/content/72q87065781071r0/fulltext.pdf}
+}
+
+@INBOOK{Faugeras_Toscani_1986,
+  pages = {15--20},
+  title = {The calibration problem for stereo},
+  year = {1986},
+  author = {Faugeras, O D and Toscani, G},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern
+	Recognition}
+}
+
+@ARTICLE{Fischler_Bolles_1981,
+  author = {Fischler, Martin A and Bolles, Robert C},
+  title = {Random sample consensus: a paradigm for model fitting with applications
+	to image analysis and automated cartography},
+  journal = {Communications of the ACM},
+  year = {1981},
+  volume = {24},
+  pages = {381--395},
+  number = {6},
+  editor = {Fischler, M A and Firschein, OEditors},
+  publisher = {ACM},
+  url = {http://portal.acm.org/citation.cfm?doid=358669.358692}
+}
+
+@BOOK{Forsyth_Ponce_2002,
+  title = {Computer Vision: A Modern Approach},
+  publisher = {Prentice Hall},
+  year = {2002},
+  author = {Forsyth, David A and Ponce, Jean},
+  pages = {693},
+  journal = {Book},
+  url = {http://www.amazon.com/exe℅bidos/redirect?tag=citeulike07-20&path=ASIN/0130851981}
+}
+
+@ARTICLE{Freeman_Szeliski_2006,
+  author = {Freeman, W T and Szeliski, R},
+  title = {Noise Estimation from a Single Image},
+  journal = {2006 IEEE Computer Society Conference on Computer Vision and Pattern
+	Recognition Volume 1 CVPR06},
+  year = {2006},
+  volume = {1},
+  pages = {901--908},
+  number = {c},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1640848}
+}
+
+@INBOOK{Freeman_Tanaka_Ohta_Kyuma_1996,
+  pages = {100--105},
+  title = {Computer vision for computer games},
+  publisher = {IEEE Comput. Soc. Press},
+  year = {1996},
+  author = {Freeman, W T and Tanaka, K and Ohta, J and Kyuma, K},
+  booktitle = {Automatic Face and Gesture Recognition 1996 Proceedings of the Second
+	International Conference on},
+  url = {http://www.computer.org/portal/web/csdl/doi/10.1109/AFGR.1996.557250}
+}
+
+@BOOK{Gibson_1950,
+  title = {The perception of the visual world},
+  publisher = {Houghton Mifflin},
+  year = {1950},
+  author = {Gibson, J J},
+  volume = {98},
+  number = {413},
+  pages = {19510701--19510701},
+  journal = {The British Journal of Psychiatry},
+  url = {http://bjp.rcpsych.org/cgi/doi/10.1192/bjp.98.413.717-a}
+}
+
+@INBOOK{Harris_Stephens_1988,
+  pages = {147--151},
+  title = {A combined corner and edge detector},
+  publisher = {Manchester, UK},
+  year = {1988},
+  editor = {Matthews, M MEditor},
+  author = {Harris, Chris and Stephens, Mike},
+  volume = {15},
+  number = {Manchester},
+  booktitle = {Alvey vision conference},
+  url = {http://www.cis.rit.edu/~cnspci/references/dip/harris1988.pdf}
+}
+
+@BOOK{Hartley_Zisserman_2003,
+  title = {Multiple View Geometry in Computer Vision},
+  publisher = {Cambridge University Press},
+  year = {2003},
+  author = {Hartley, Richard and Zisserman, Andrew},
+  journal = {Book},
+  url = {http://www.cambridge.org/uk/catalogue/catalogue.asp?isbn=0521540518}
+}
+
+@ARTICLE{Hartley_1993,
+  author = {Hartley, Richard I},
+  title = {Self-Calibration from Two Views},
+  journal = {Contract},
+  year = {1993},
+  publisher = {Citeseer},
+  url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.72.895&rep=rep1&type=pdf}
+}
+
+@ARTICLE{hartley1997triangulation,
+  author = {Hartley, Richard I and Sturm, Peter},
+  title = {Triangulation},
+  journal = {Computer vision and image understanding},
+  year = {1997},
+  volume = {68},
+  pages = {146--157},
+  number = {2},
+  publisher = {Elsevier}
+}
+
+@MISC{Hassner_Basri_2006,
+  author = {Hassner, T and Basri, R},
+  title = {Example Based 3D Reconstruction from Single 2D Images},
+  year = {2006},
+  journal = {2006 Conference on Computer Vision and Pattern Recognition Workshop
+	CVPRW06},
+  number = {3},
+  pages = {15--15},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1640454},
+  volume = {4}
+}
+
+@ARTICLE{Herbort_Wohler_2011,
+  author = {Herbort, Steffen and Wöhler, Christian},
+  title = {An introduction to image-based 3D surface reconstruction and a survey
+	of photometric stereo methods},
+  journal = {3D Research},
+  year = {2011},
+  volume = {2},
+  pages = {1--18},
+  number = {3},
+  publisher = {3D Display Research Center, co-published with Springer},
+  url = {http://www.springerlink.com/index/10.1007/3DRes.03(2011)4}
+}
+
+@ARTICLE{Jahne_Haubecker_Ray_2002,
+  author = {Jahne, Bernd and Haubecker, Horst and Ray, Lawrence A},
+  title = {Computer Vision and Applications: A Guide for Students and Practitioners},
+  journal = {Journal of Electronic Imaging},
+  year = {2002},
+  volume = {11},
+  pages = {115},
+  number = {1},
+  publisher = {Academic Press},
+  url = {http://link.aip.org/link/?JEIME5/11/115/1}
+}
+
+@BOOK{Jahne_Haussecker_Geibler_1999,
+  title = {Handbook of computer vision applications, Vol. 3},
+  publisher = {Academic Press},
+  year = {1999},
+  author = {Jähne, B and Haussecker, H and Geißler, P},
+  volume = {3},
+  journal = {Imaging},
+  url = {http://scholar.google.com/scholar?hl=en&btnG=Search&q=intitle:handbook+of+COMPUTER+VISION+AND+applications#2}
+}
+
+@ARTICLE{Labatut_Pons_Keriven_2007,
+  author = {Labatut, Patrick and Pons, Jean-Philippe and Keriven, Renaud},
+  title = {Efficient Multi-View Reconstruction of Large-Scale Scenes using Interest
+	Points, Delaunay Triangulation and Graph Cuts},
+  journal = {IEEE 11th International Conference on Computer Vision (2007)},
+  year = {2007},
+  pages = {1--8},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4408892}
+}
+
+@MISC{Leutenegger_Chli_Siegwart_2011,
+  author = {Leutenegger, Stefan and Chli, Margarita and Siegwart, Roland Y},
+  title = {BRISK: Binary Robust invariant scalable keypoints},
+  year = {2011},
+  editor = {Abe, A and Oehlmann, REditors},
+  journal = {2011 International Conference on Computer Vision},
+  pages = {2548--2555},
+  publisher = {IEEE},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6126542}
+}
+
+@MISC{Liu_Cheng_2008,
+  author = {Liu, Dianchao Liu Dianchao and Cheng, S},
+  title = {A Brief Introduction of Feature Matching},
+  year = {2008},
+  journal = {2008 IEEE Region 5 Conference}
+}
+
+@ARTICLE{Longuet_Higgins_1981,
+  author = {Longuet-Higgins, H C},
+  title = {A computer algorithm for reconstructing a scene from two projections},
+  journal = {Nature},
+  year = {1981},
+  volume = {293},
+  pages = {133--135},
+  number = {5828},
+  publisher = {Morgan Kaufmann},
+  url = {http://www.nature.com/doifinder/10.1038/293133a0}
+}
+
+@ARTICLE{Lowe_1999,
+  author = {Lowe, D G},
+  title = {Object recognition from local scale-invariant features},
+  journal = {Proceedings of the Seventh IEEE International Conference on Computer
+	Vision},
+  year = {1999},
+  volume = {2},
+  pages = {1150--1157 vol.2},
+  number = {[8},
+  editor = {Tsotsos, JEditor},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=790410}
+}
+
+@ARTICLE{Lucas_Kanade_1981,
+  author = {Lucas, Bruce D and Kanade, Takeo},
+  title = {An Iterative Image Registration Technique with an Application to
+	Stereo Vision},
+  journal = {Imaging},
+  year = {1981},
+  volume = {130},
+  pages = {674--679},
+  number = {x},
+  editor = {Hayes, Patrick JEditor},
+  publisher = {Citeseer},
+  url = {http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.49.2019&rep=rep1&type=pdf}
+}
+
+@ARTICLE{Maybank_Faugeras_1992,
+  author = {Maybank, Stephen J and Faugeras, Olivier D},
+  title = {A theory of self-calibration of a moving camera},
+  journal = {International Journal of Computer Vision},
+  year = {1992},
+  volume = {8},
+  pages = {123--151},
+  number = {2},
+  publisher = {Springer},
+  url = {http://www.springerlink.com/index/10.1007/BF00127171}
+}
+
+@MISC{wiki:Janus_machine,
+  author = {Kyle McDonald},
+  title = {The Janus Machine --- Structured light 3D scanner},
+  year = {2011},
+  url = {http://vimeo.com/16197436}
+}
+
+@ARTICLE{McInerney_Terzopoulos_1996,
+  author = {McInerney, Tim and Terzopoulos, Demetri},
+  title = {Deformable models in medical image analysis: a survey},
+  journal = {Medical Image Analysis},
+  year = {1996},
+  volume = {1},
+  pages = {91--108},
+  number = {2},
+  url = {http://www.sciencedirect.com/science/article/B6W6Y-45JKKXN-6/2/0594c7d0323a96476b360f5da8b97044}
+}
+
+@INBOOK{Ming_Huadong_2007,
+  pages = {364--370},
+  title = {A blob detector in color images},
+  publisher = {ACM New York, NY, USA},
+  year = {2007},
+  author = {Ming, Anlong and Huadong, Ma},
+  booktitle = {CIVR 07 Proceedings of the 6th ACM international conference on Image
+	and video retrieval}
+}
+
+@ARTICLE{olsson-etal-2011,
+  author = {Carl Olsson and Fredrik Kahl and Olof Enqvist},
+  title = {Stable Structure from Motion using Rotational Consistency},
+  year = {2011}
+}
+
+@INPROCEEDINGS{beardsley_etal_eccv1994,
+  author = {P A Beardsley, A Zisserman and D W Murray},
+  title = {Navigation using affine structure from motion},
+  booktitle = {Proc 3rd European Conf on Computer Vision, Stockholm},
+  year = {1994},
+  series = {Lecture Notes in Computer Science},
+  pages = {85-96},
+  publisher = {Springer}
+}
+
+@INPROCEEDINGS{PAALANEN:2008:INRIA-00325795:1,
+  author = {Paalanen, Pekka and Kyrki, Ville and Kamarainen, Joni-Kristian},
+  title = {Towards Monocular On-Line 3D Reconstruction},
+  booktitle = {{Workshop on Vision in Action: Efficient strategies for cognitive
+	agents in complex environments}},
+  year = {2008},
+  address = {Marseille, France},
+  organization = {Markus Vincze and Danica Kragic and Darius Burschka and Antonis Argyros},
+  abstract = {{The use of visual sensing for action generation in unknown environments
+	is an attractive option due to the great representation power of
+	vision, but it is challenging for two reasons. The representations
+	used in vision are often not well suitable for planning, thus requiring
+	complex learning approaches. Furthermore, an active agent needs to
+	make decisions on-line, without the delay of off-line processing.
+	This paper proposes to combine monocular visual SLAM with dense visual
+	reconstruction techniques in order to build geometrically correct
+	three-dimensional models, which can be used for action generation,
+	such as path or grasp planning in a robotic system. We propose a
+	vision only monocular solution which will run on-line on commodity
+	hardware. The problem is very challenging and currently no complete
+	solutions exist, though similar off-line systems are quite mature.}},
+  affiliation = {Machine Vision and Pattern Recognition Research Group},
+  audience = {international },
+  hal_id = {inria-00325795},
+  language = {English},
+  pdf = {http://hal.inria.fr/inria-00325795/PDF/Paalanen.pdf},
+  url = {http://hal.inria.fr/inria-00325795}
+}
+
+@INPROCEEDINGS{pan2009ProFORMA,
+  author = {Pan, Q. and Reitmayr, G. and Drummond, T.},
+  title = {{P}ro{FORMA}: {P}robabilistic {F}eature-based {O}n-line {R}apid {M}odel
+	{A}cquisition},
+  booktitle = {Proc. 20th British Machine Vision Conference (BMVC)},
+  year = {2009},
+  address = {London},
+  month = {September}
+}
+
+@MISC{Peng_Chen_Zhou_Liu_2009,
+  author = {Peng, Keju Peng Keju and Chen, Xin Chen Xin and Zhou, Dongxiang Zhou
+	Dongxiang and Liu, Yunhui Liu Yunhui},
+  title = {3D reconstruction based on SIFT and Harris feature points},
+  year = {2009},
+  journal = {Robotics and Biomimetics ROBIO 2009 IEEE International Conference
+	on},
+  number = {1},
+  pages = {960--964},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5420735},
+  volume = {960}
+}
+
+@ARTICLE{Pollefeys_Gool_2002,
+  author = {Pollefeys, Marc and Gool, Luc Van},
+  title = {From images to 3D models},
+  journal = {Communications of the ACM},
+  year = {2002},
+  volume = {45},
+  pages = {50--55},
+  number = {7},
+  publisher = {ACM},
+  url = {http://portal.acm.org/citation.cfm?doid=514236.514263}
+}
+
+@ARTICLE{Raposo_Chambel_2009,
+  author = {Raposo, David and Chambel, Teresa},
+  title = {Movie table: tangible interaction with movies},
+  journal = {International MindTrek Conference},
+  year = {2009},
+  pages = {217--217},
+  url = {http://portal.acm.org/citation.cfm?id=1621841.1621885}
+}
+
+@ARTICLE{Rocchini_Cignoni_Montani_Pingi_Scopigno_2001,
+  author = {Rocchini, C and Cignoni, P and Montani, C and Pingi, P and Scopigno,
+	R},
+  title = {A low cost 3D scanner based on structured light},
+  journal = {Computer Graphics Forum},
+  year = {2001},
+  volume = {20},
+  pages = {299--308},
+  number = {3},
+  publisher = {John Wiley \& Sons},
+  url = {http://doi.wiley.com/10.1111/1467-8659.00522}
+}
+
+@ARTICLE{Rosten_Drummond_2006,
+  author = {Rosten, Edward and Drummond, Tom},
+  title = {Machine learning for high-speed corner detection},
+  journal = {Machine Learning},
+  year = {2006},
+  volume = {1},
+  pages = {1--14},
+  number = {1},
+  editor = {Pinz, Axel, with Aleš Leonardis Horst BischofEditors},
+  publisher = {Springer},
+  url = {http://www.springerlink.com/index/y11g42n05q626127.pdf}
+}
+
+@MISC{Rublee_Rabaud_Konolige_Bradski_2011,
+  author = {Rublee, Ethan and Rabaud, Vincent and Konolige, Kurt and Bradski,
+	Gary},
+  title = {ORB: An efficient alternative to SIFT or SURF},
+  year = {2011},
+  journal = {2011 International Conference on Computer Vision},
+  number = {1},
+  pages = {2564--2571},
+  publisher = {IEEE},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6126544},
+  volume = {95}
+}
+
+@ARTICLE{Scott_Roth_Rivest_2003,
+  author = {Scott, William R and Roth, Gerhard and Rivest, Jean-François},
+  title = {View planning for automated three-dimensional object reconstruction
+	and inspection},
+  journal = {ACM Computing Surveys},
+  year = {2003},
+  volume = {35},
+  pages = {64--96},
+  number = {1},
+  publisher = {ACM},
+  url = {http://portal.acm.org/citation.cfm?doid=641865.641868}
+}
+
+@BOOK{Shah_1983,
+  title = {Fundamentals in Computer Vision},
+  publisher = {Cambridge University Press},
+  year = {1983},
+  editor = {Faugeras, OlivierEditor},
+  author = {Shah, M},
+  pages = {29--44},
+  journal = {Image Rochester NY}
+}
+
+@BOOK{Shapiro_Stockman_2001,
+  title = {Computer Vision},
+  publisher = {Prentice Hall},
+  year = {2001},
+  author = {Shapiro, Linda and Stockman, George},
+  volume = {3},
+  number = {October},
+  pages = {608},
+  journal = {October},
+  url = {http://www.amazon.com/Computer-Vision-Linda-G-Shapiro/dp/0130307963}
+}
+
+@MISC{Smisek_Jancosek_Pajdla_2011,
+  author = {Smisek, Jan and Jancosek, Michal and Pajdla, Tomas},
+  title = {3D with Kinect},
+  year = {2011},
+  journal = {2011 IEEE International Conference on Computer Vision Workshops ICCV
+	Workshops},
+  pages = {1154--1160},
+  publisher = {IEEE},
+  url = {http://scholar.google.com/scholar?hl=en&btnG=Search&q=intitle:3D+with+Kinect#0}
+}
+
+@BOOK{Sonka_Hlavac_Boyle_2007,
+  title = {Image Processing, Analysis, and Machine Vision},
+  publisher = {PWS Publishing},
+  year = {2007},
+  author = {Sonka, Milan and Hlavac, Vaclav and Boyle, Roger},
+  volume = {3},
+  pages = {800},
+  journal = {Unknown Journal},
+  url = {http://www.amazon.ca/exec/obidos/redirect?tag=citeulike09-20&path=ASIN/049508252X}
+}
+
+@BOOK{Szeliski_2010,
+  title = {Computer Vision : Algorithms and Applications},
+  publisher = {Springer},
+  year = {2010},
+  author = {Szeliski, Richard},
+  journal = {Computer},
+  url = {http://books.google.com/books?hl=en&lr=&id=bXzAlkODwa8C&oi=fnd&pg=PR9&dq=Computer+Vision+:+Algorithms+and+Applications&ots=gYY592oyHJ&sig=plOeEaFaDpsKFQsLweMS3eIXATY}
+}
+
+@ARTICLE{Thong_Sim_Phang_2001,
+  author = {Thong, J T and Sim, K S and Phang, J C},
+  title = {Single-image signal-to-noise ratio estimation.},
+  journal = {Scanning},
+  year = {2001},
+  volume = {23},
+  pages = {328--336},
+  number = {5},
+  publisher = {Wiley Periodicals, Inc.},
+  url = {http://www.ncbi.nlm.nih.gov/pubmed/20942870}
+}
+
+@ARTICLE{Torr_Murray_1997,
+  author = {Torr, P H S and Murray, D W},
+  title = {The Development and Comparison of Robust Methods for Estimating the
+	Fundamental Matrix},
+  journal = {International Journal of Computer Vision},
+  year = {1997},
+  volume = {24},
+  pages = {271--300},
+  number = {3},
+  publisher = {Springer},
+  url = {http://www.springerlink.com/index/V21413L685235427.pdf}
+}
+
+@ARTICLE{Tsai_R_Y_1987,
+  author = {Tsai, R.Y.},
+  title = {A versatile camera calibration technique for high-accuracy 3D machine
+	vision metrology using off-the-shelf TV cameras and lenses},
+  journal = {Robotics and Automation, IEEE Journal of},
+  year = {August},
+  volume = {3},
+  pages = {323-344},
+  number = {4},
+  doi = {10.1109/JRA.1987.1087109},
+  issn = {0882-4967},
+  keywords = {Calibration;Machine vision;Measurement;Application software;Calibration;Cameras;Lenses;Machine
+	vision;Metrology;Robot kinematics;Robot vision systems;Robotic assembly;TV}
+}
+
+@ARTICLE{Tuytelaars_Mikolajczyk_2007,
+  author = {Tuytelaars, Tinne and Mikolajczyk, Krystian},
+  title = {Local Invariant Feature Detectors: A Survey},
+  journal = {Foundations and Trends® in Computer Graphics and Vision},
+  year = {2007},
+  volume = {3},
+  pages = {177--280},
+  number = {3},
+  publisher = {Now Publishers Inc.},
+  url = {http://www.nowpublishers.com/product.aspx?product=CGV&doi=0600000017}
+}
+
+@ARTICLE{Ullman_1979,
+  author = {Ullman, S},
+  title = {The interpretation of structure from motion},
+  journal = {Proceedings of the Royal Society of London Series B Biological Sciences},
+  year = {1979},
+  volume = {203},
+  pages = {405--426},
+  number = {1153},
+  publisher = {The Royal Society},
+  url = {http://www.jstor.org/stable/77505}
+}
+
+@BOOK{university1995binocular,
+  title = {Binocular Vision and Stereopsis},
+  publisher = {Oxford University Press, USA},
+  year = {1995},
+  author = {University, I.P.H.C.V.R.Y. and University, B.J.R.D.E.P.O.},
+  series = {Oxford psychology series},
+  isbn = {9780195084764},
+  lccn = {94045728},
+  url = {http://books.google.co.uk/books?id=I8vqITdETe0C}
+}
+
+@ARTICLE{Vincent_Lagani_2001,
+  author = {Vincent, Etienne and Lagani, Robert},
+  title = {Matching Feature Points in Stereo Pairs : A Comparative Study of
+	Some Matching Strategies},
+  journal = {Machine Graphics And Vision},
+  year = {2001},
+  volume = {10},
+  pages = {271--285},
+  number = {3},
+  publisher = {INSTITUTE OF COMPUTER SCIENCE},
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S1077314296905123}
+}
+
+@MISC{Wang_Tsui_2000,
+  author = {Wang, Wei Wang Wei and Tsui, Hung Tat Tsui Hung Tat},
+  title = {A SVD decomposition of essential matrix with eight solutions for
+	the relative positions of two perspective cameras},
+  year = {2000},
+  journal = {Proceedings 15th International Conference on Pattern Recognition
+	ICPR2000},
+  pages = {362--365},
+  publisher = {IEEE Comput. Soc},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=905353},
+  volume = {1}
+}
+
+@MISC{Wang_Quan_2008,
+  author = {Wang, Zhongren Wang Zhongren and Quan, Yanming Quan Yanming},
+  title = {An Improved Method for Feature Point Matching in 3D Reconstruction},
+  year = {2008},
+  journal = {2008 International Symposium on Information Science and Engineering},
+  pages = {159--162},
+  publisher = {Ieee},
+  url = {http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=4732191},
+  volume = {1}
+}
+
+@ARTICLE{Werner_Zisserman_2002,
+  author = {Werner, Tomas and Zisserman, Andrew},
+  title = {New Techniques for Automated Architectural Reconstruction from Photographs},
+  journal = {ECCV},
+  year = {2002},
+  volume = {2},
+  pages = {541--555},
+  publisher = {Springer-Verlag},
+  url = {http://www.robots.ox.ac.uk/~vgg/publications-new/Public/2002/Werner02/werner02.pdf}
+}
+
+@MISC{wiki:Computer_vision,
+  author = {Wikipedia},
+  title = {Computer vision --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Computer_vision&oldid=470961889}
+}
+
+@MISC{wiki:Kinect,
+  author = {Wikipedia},
+  title = {Kinect --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Kinect&oldid=472704014}
+}
+
+@MISC{wiki:Stereopsis,
+  author = {Wikipedia},
+  title = {Stereopsis --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Stereopsis&oldid=470880894}
+}
+
+@MISC{wiki:Structure_from_motion,
+  author = {Wikipedia},
+  title = {Structure from motion --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Structure_from_motion&oldid=470815881}
+}
+
+@MISC{wiki:Structured_light_3D_scanner,
+  author = {Wikipedia},
+  title = {Structured-light 3D scanner --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Structured-light_3D_scanner&oldid=470377710}
+}
+
+@MISC{wiki:SURF,
+  author = {Wikipedia},
+  title = {Speeded Up Robust Feature --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=SURF&oldid=471054060}
+}
+
+@MISC{wiki:Time_of_flight_camera,
+  author = {Wikipedia},
+  title = {Time-of-flight camera --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Time-of-flight_camera&oldid=469340039}
+}
+
+@MISC{wiki:Walle,
+  author = {Wikipedia},
+  title = {WALL-E --- Wikipedia{,} The Free Encyclopedia},
+  year = {2012},
+  note = {[Online; accessed 4-February-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=WALL-E&oldid=474781813}
+}
+
+@MISC{wiki:3D_reconstruction,
+  author = {Wikipedia},
+  title = {3D reconstruction --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=3D_reconstruction&oldid=462434499}
+}
+
+@MISC{wiki:Computer_stereo_vision,
+  author = {Wikipedia},
+  title = {Computer stereo vision --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 27-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Computer_stereo_vision&oldid=435647151}
+}
+
+@MISC{wiki:Disparity,
+  author = {Wikipedia},
+  title = {Binocular disparity --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 8-February-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Binocular_disparity&oldid=448399035}
+}
+
+@MISC{wiki:Feature_detection,
+  author = {Wikipedia},
+  title = {Feature detection (computer vision) --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Feature_detection_(computer_vision)&oldid=455241471}
+}
+
+@MISC{wiki:Optical_flow,
+  author = {Wikipedia},
+  title = {Optical flow --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Optical_flow&oldid=464339542}
+}
+
+@MISC{wiki:SIFT,
+  author = {Wikipedia},
+  title = {Scale-Invariant Feature Transform --- Wikipedia{,} The Free Encyclopedia},
+  year = {2011},
+  note = {[Online; accessed 23-January-2012]},
+  url = {http://en.wikipedia.org/w/index.php?title=Scale-invariant_feature_transform&oldid=467467205}
+}
+
+@MISC{Ying_Hong-e_Ben-zhi_2010,
+  author = {Ying, Chang Ying Chang and Hong-e, Ren Hong-e Ren and Ben-zhi, Dong
+	Ben-zhi Dong},
+  title = {An improved algorithm for feature point matching},
+  year = {2010},
+  journal = {Environmental Science and Information Application Technology ESIAT
+	2010 International Conference on},
+  number = {3},
+  pages = {429--436},
+  url = {http://linkinghub.elsevier.com/retrieve/pii/S0097849302000869},
+  volume = {4}
+}
+
+@ARTICLE{Zhang_camcal_2004,
+  author = {Zhengyou Zhang},
+  title = {Camera Calibration with One-Dimensional Objects},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year = {2004},
+  volume = {26},
+  pages = {892-899},
+  number = {7},
+  address = {Los Alamitos, CA, USA},
+  doi = {http://doi.ieeecomputersociety.org/10.1109/TPAMI.2004.21},
+  issn = {0162-8828},
+  publisher = {IEEE Computer Society}
+}
+

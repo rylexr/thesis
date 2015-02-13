@@ -1,0 +1,33 @@
+\chapter{Conclusiones y trabajo futuro}
+\label{chap:conclusiones}
+\epigraph{The best way to predict the future is to implement it.}{Alan Curtis Kay}
+
+En este cap\'{i}tulo se detalla las conclusiones del trabajo realizado as\'{i} como una secci\'{o}n de trabajo futuro.
+
+\section{Conclusiones}
+Esta tesis mostr\'{o} que es posible reconstruir r\'{a}pidamente un objeto tridimensional a partir de, \'{u}nicamente, la informaci\'{o}n contenida en una secuencia de im\'{a}genes provenientes de una c\'{a}mara convencional de bajo costo. Sin embargo, existen t\'{e}cnicas de reconstrucci\'{o}n mucho m\'{a}s robustas y complejas con las cuales es posible generar resultados de mayor calidad y precisi\'{o}n cuando el tiempo no es considerado un factor importante. 
+
+Cabe destacar que a pesar de su simplicidad, la técnica propuesta genera resultados de gran calidad en un tiempo corto y sin la utilización de equipo especial. La principales conclusiones obtenidas a partir de este trabajo son:
+
+\begin{itemize*}
+\item No es necesario la utilizaci\'{o}n de equipo costoso especializado para lograr reconstrucciones tridimensionales de gran calidad.
+
+\item La creaci\'{o}n de t\'{e}cnicas baratas de reconstrucci\'{o}n es necesaria debido a la gran demanda que existe por modelos tridimensionales de objetos f\'{i}sicos complejos.
+
+\item La calidad de la c\'{a}mara utilizada para capturar las im\'{a}genes no es un factor determinante en la calidad de la reconstrucci\'{o}n final.
+
+\item El proceso de calibraci\'{o}n de la c\'{a}mara es de suma importancia para lograr una reconstrucci\'{o}n tridimensional exitosa. En muchas ocasiones, la reconstrucci\'{o}n fallar\'{a} debido a que el c\'{a}lculo de la matriz fundamental \textit{F} fue err\'{o}neo, por lo que es necesario agregar tantas verificaciones como sea posible durante esta etapa para que la t\'{e}cnica de reconstrucci\'{o}n sea suficientemente robusta.
+
+\item Utilizar t\'{e}cnicas pir\'{a}mide durante el procesamiento de las im\'{a}genes permite reducir la duraci\'{o}n de algoritmos de b\'{u}squeda de caracter\'{i}sticas sin necesidad de sacrificar informaci\'{o}n relevante para el proceso de reconstrucci\'{o}n tridimensional.
+
+\item Algoritmos de flujo \'{o}ptico como el de Farnebäck y el de Lucas-Kanade pueden ser utilizados en reconstrucción r\'{a}pida y adem\'{a}s, permiten realizar una reconstrucci\'{o}n mucho m\'{a}s densa que si se realizara con algoritmos basados en caracter\'{i}sticas sobresalientes.
+\end{itemize*}
+
+\section{Trabajo futuro}
+\textbf{Optimizaci\'{o}n}. Como trabajo futuro se puede optimizar el algoritmo para que tome ventaja de procesadores \textit{multicore} y así realizar muchos de los procesos de la t\'{e}cnica de forma paralela.
+
+\textbf{Refinamiento}. Tambi\'{e}n se puede incorporar una etapa de refinamiento justo despu\'{e}s de la etapa de reconstrucci\'{o}n tridimensional de cada par de im\'{a}genes estereosc\'{o}picas con tal de mejorar la calidad de dicha reconstrucci\'{o}n. 
+
+\textbf{Registro}. Adicionalmente, se puede implementar una etapa de registro posterior a la etapa de refinamiento con tal de poder realizar una reconstrucci\'{o}n completa de un objeto.
+
+\textbf{Captura de vistas automatizado}. Finalmente, se puede implementar la automatizaci\'{o}n del proceso de captura de vistas con tal de minimizar la intervenci\'{o}n del usuario.

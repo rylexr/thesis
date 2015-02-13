@@ -1,0 +1,81 @@
+\chapter{Ap\'{e}ndice}
+\label{chap:apendice}
+
+\section{Pseudoc\'{o}digo del algoritmo de reconstrucci\'{o}n 3D}
+\begin{alltt}
+\textbf{reconstructor_3d}
+  \textbf{calibrar_camara}() \textit{// usar t\'{e}cnica del tablero de ajedrez}
+    calcular la matriz de calibraci\'{o}n K
+    calcular la matriz de distorsi\'{o}n D
+  \textbf{fin}
+  
+  \textbf{capturar_vistas}() 
+    \textit{// rotar objeto frente a la c\'{a}mara y capturar las vistas}
+  \textbf{fin}
+  
+  \textbf{pareo_de_puntos}()
+    \textbf{para} cada par de vistas KF1, KF2 \textbf{hacer en paralelo}
+      detectar puntos clave para KF1, KF2 usando FAST con pir\'{a}mide
+      calcular el flujo \'{o}ptico usando Farnebäck
+      filtrar los puntos con alta tasa de error
+      realizar un pareo de puntos entre KF1 y KF2 usando Brute-Force
+    \textbf{fin}
+  \textbf{fin}
+  
+  \textbf{eliminar_pareos_erroneos}()
+    \textbf{para} cada par de vistas KF1, KF2 \textbf{hacer en paralelo}
+      encontrar la matriz fundamental F para KF1 y KF2
+      eliminar pareos erroneos usando F
+    \textbf{fin}
+  \textbf{fin}
+  
+  \textbf{calcular_matrices_de_camara}(KF1, KF2)
+    calcular la matriz fundamental usando RANSAC
+    calcular la matriz esencial (R,t) usando \(E = K'\sp{T}*F*K\)
+  \textbf{fin}
+  
+  \textbf{triangular_puntos}(KF1, KF2)
+    obtener matriz esencial para KF1 y KF2
+    utilizar algoritmo de m\'{i}nimos cuadrados para la triangulaci\'{o}n
+    retornar resultado de la triangulaci\'{o}n
+  \textbf{fin}
+  
+  \textbf{encontrar_triangulacion_base}()
+    // utilizar los pareos encontrados
+    // reconstruir 2 vistas
+    \textbf{para} cada par de pareos M1, M2 \textbf{hacer}
+      obtener KF1, KF2 con M1, M2
+      buena_matriz = calcular_matrices_de_camara(KF1, KF2);
+      \textbf{si} buena_matriz = \textbf{true} \textbf{entonces}
+        buena_triangulacion = triangular_puntos(KF1, KF2);
+        \textbf{si} buena_triangulacion = \textbf{true} \textbf{entonces}
+          agregar el calculo a la nube global de puntos
+        \textbf{sino}
+          buena_matriz = \textbf{false};
+        \textbf{fin}
+      \textbf{fin}
+      \textbf{si} buena_matriz = \textbf{true} \textbf{entonces}
+        salir del ciclo
+      \textbf{fin}
+    \textbf{fin}
+  \textbf{fin}
+  
+  \textbf{recuperar_nueva_vista}()
+    // realizar los mapeos 2D-3D
+    // utilizar \textit{EPnP} con \textit{K} y mapeos para obtener nueva \textit{P1}
+    // triangular usando nueva c\'{a}mara \textit{P1}
+    // agregar nuevos puntos a la lista global
+  \textbf{fin}
+
+  \textbf{ejecutar}()
+    calibrar_camara();
+    capturar_vistas();
+    pareo_de_puntos();
+    eliminar_pareos_erroneos();
+    encontrar_triangulacion_base();
+    \textbf{para} cada nueva vista \textbf{hacer}
+      recuperar_nueva_vista();
+    \textbf{fin}
+  \textbf{fin}
+\textbf{fin}
+\end{alltt}

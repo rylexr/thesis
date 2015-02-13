@@ -1,0 +1,153 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Reconstrucci&#243;n 3D</TITLE>
+<META NAME="description" CONTENT="Reconstrucci&#243;n 3D">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="previous" HREF="node7.html">
+<LINK REL="up" HREF="node6.html">
+<LINK REL="next" HREF="node9.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html249"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html245"
+  HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html241"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html247"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html250"
+  HREF="node9.html">Calibraci&#243;n del sistema de</A>
+<B> Up:</B> <A NAME="tex2html246"
+  HREF="node6.html">Visi&#243;n artificial</A>
+<B> Previous:</B> <A NAME="tex2html242"
+  HREF="node7.html">¿Porqu&#233; la visi&#243;n artificial</A>
+ &nbsp; <B>  <A NAME="tex2html248"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00422000000000000000">
+Reconstrucci&#243;n 3D</A>
+</H2>
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:Pasive3DReconstruction"></A><A NAME="fig:Active3DReconstruction"></A><A NAME="fig:3DReconstruction"></A><A NAME="695"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.4:</STRONG>
+(a). Captura de im&#225;genes durante el proceso pasivo de reconstrucci&#243;n del objeto tridimensional. Imagen tomada de <TT><A NAME="tex2html4"
+  HREF="http://carlos-hernandez.org/research.html">http://carlos-hernandez.org/research.html</A></TT> &#169;. (b). Proyecci&#243;n de luz l&#225;ser durante el proceso activo de reconstrucci&#243;n del objeto tridimensional. Imagen tomada de <TT><A NAME="tex2html5"
+  HREF="http://en.wikipedia.org/wiki/File:LaserPrinciple.png">http://en.wikipedia.org/wiki/File:LaserPrinciple.png</A></TT> &#169;.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV>[Reconstrucci&#243;n pasiva de un objeto]<IMG
+  WIDTH="500" HEIGHT="340" ALIGN="BOTTOM" BORDER="0"
+ SRC="./pasive.png"
+ ALT="Image pasive">                
+[Reconstrucci&#243;n activa de un objeto]<IMG
+  WIDTH="794" HEIGHT="599" ALIGN="BOTTOM" BORDER="0"
+ SRC="./active.png"
+ ALT="Image active"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+La reconstrucci&#243;n 3D es el proceso de capturar digitalmente la forma y apariencia de un objeto real. Este proceso puede ser realizado utilizando <SPAN  CLASS="textit">t&#233;cnicas activas</SPAN> o <SPAN  CLASS="textit">pasivas</SPAN> [<A NAME="tex2html254" target="contents"
+  HREF="node25.html#Cyganek_Siebert_2009">9</A>,<A NAME="tex2html255" target="contents"
+  HREF="node25.html#Forsyth_Ponce_2002">14</A>,<A NAME="tex2html256" target="contents"
+  HREF="node25.html#Szeliski_2010">34</A>].
+
+<P>
+Al utilizar una <SPAN  CLASS="textit">t&#233;cnica activa</SPAN> de reconstrucci&#243;n se interfiere activamente con el objeto. Generalmente, utiliza la proyecci&#243;n de alg&#250;n tipo de energ&#237;a (luz l&#225;ser o infrarroja) para lograr la reconstrucci&#243;n del objeto. El c&#225;lculo de la distancia 3D hacia los puntos del objeto se realiza por medio de la energ&#237;a reflejada. Ejemplos de este tipo de t&#233;cnica son c&#225;maras infrarrojas de profundidad, l&#225;ser <SPAN  CLASS="textit">time-of-flight</SPAN>, microondas o ultrasonido [<A NAME="tex2html257" target="contents"
+  HREF="node25.html#wiki:Kinect">38</A>,<A NAME="tex2html258" target="contents"
+  HREF="node25.html#Rocchini_Cignoni_Montani_Pingi_Scopigno_2001">29</A>,<A NAME="tex2html259" target="contents"
+  HREF="node25.html#wiki:Janus_machine">23</A>]. Por otro lado, al utilizar una <SPAN  CLASS="textit">t&#233;cnica pasiva</SPAN> de reconstrucci&#243;n no se interfiere con el objeto. Generalmente, se utiliza un sensor con el cual se mide la radiaci&#243;n reflejada o emitida por su superficie para determinar su estructura tridimensional. El sensor puede ser una c&#225;mara fotogr&#225;fica o de video sensible a la luz natural y los datos necesarios para la reconstrucci&#243;n son el grupo de im&#225;genes digitales (una o m&#225;s) capturadas por &#233;sta. El resultado final es una reconstrucci&#243;n basada en im&#225;genes [<A NAME="tex2html260" target="contents"
+  HREF="node25.html#Cyganek_Siebert_2009">9</A>,<A NAME="tex2html261" target="contents"
+  HREF="node25.html#Pollefeys_Gool_2002">28</A>,<A NAME="tex2html262" target="contents"
+  HREF="node25.html#Jahne_Haussecker_Geibler_1999">20</A>,<A NAME="tex2html263" target="contents"
+  HREF="node25.html#Faugeras_1992">13</A>]. La Figura&nbsp;<A HREF="#fig:3DReconstruction">1.4</A> muestra las etapas de captura de im&#225;genes (t&#233;cnica pasiva) y proyecci&#243;n de luz l&#225;ser (t&#233;cnica activa) para la reconstrucci&#243;n de un objeto tridimensional.
+
+<P>
+Independientemente de la t&#233;cnica escogida, el proceso de reconstrucci&#243;n 3D puede dividirse en tres grandes &#225;reas: <SPAN  CLASS="textit">calibraci&#243;n del sistema de captura</SPAN>, <SPAN  CLASS="textit">estimaci&#243;n de la profundidad</SPAN> y <SPAN  CLASS="textit">construcci&#243;n del modelo tridimensional</SPAN> [<A NAME="tex2html264" target="contents"
+  HREF="node25.html#Faugeras_Luong_2001">12</A>,<A NAME="tex2html265" target="contents"
+  HREF="node25.html#Jahne_Haussecker_Geibler_1999">20</A>].
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html251"
+  HREF="node9.html">Calibraci&#243;n del sistema de captura</A>
+<LI><A NAME="tex2html252"
+  HREF="node10.html">Estimaci&#243;n de la profundidad</A>
+<LI><A NAME="tex2html253"
+  HREF="node11.html">Construcci&#243;n del modelo tridimensional</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html249"
+  HREF="node9.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html245"
+  HREF="node6.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html241"
+  HREF="node7.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html247"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html250"
+  HREF="node9.html">Calibraci&#243;n del sistema de</A>
+<B> Up:</B> <A NAME="tex2html246"
+  HREF="node6.html">Visi&#243;n artificial</A>
+<B> Previous:</B> <A NAME="tex2html242"
+  HREF="node7.html">¿Porqu&#233; la visi&#243;n artificial</A>
+ &nbsp; <B>  <A NAME="tex2html248"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Randy Saborio
+2012-02-25
+</ADDRESS>
+</BODY>
+</HTML>

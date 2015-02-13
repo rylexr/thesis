@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calibraci&#243;n del sistema de captura</TITLE>
+<META NAME="description" CONTENT="Calibraci&#243;n del sistema de captura">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node8.html">
+<LINK REL="up" HREF="node8.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html276"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html272"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html266"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html274"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html277"
+  HREF="node10.html">Estimaci&#243;n de la profundidad</A>
+<B> Up:</B> <A NAME="tex2html273"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Previous:</B> <A NAME="tex2html267"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+ &nbsp; <B>  <A NAME="tex2html275"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00422100000000000000">
+Calibraci&#243;n del sistema de captura</A>
+</H3>
+Para determinar profundidad a partir de una secuencia de im&#225;genes es necesario realizar una calibraci&#243;n de los puntos visuales de la c&#225;mara y determinar sus par&#225;metros extr&#237;nsecos e intr&#237;nsecos [<A NAME="tex2html278" target="contents"
+  HREF="node25.html#Cyganek_Siebert_2009">9</A>,<A NAME="tex2html279" target="contents"
+  HREF="node25.html#Forsyth_Ponce_2002">14</A>,<A NAME="tex2html280" target="contents"
+  HREF="node25.html#Tsai_1987">36</A>,<A NAME="tex2html281" target="contents"
+  HREF="node25.html#Jahne_Haussecker_Geibler_1999">20</A>]. La Figura&nbsp;<A HREF="#fig:Calibration">1.5</A> muestra una de las t&#233;cnicas m&#225;s populares de calibraci&#243;n en la visi&#243;n artificial utilizando un tablero de ajedrez.
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:Calibration"></A><A NAME="703"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 1.5:</STRONG>
+La t&#233;cnica de calibraci&#243;n con tablero de ajedrez es una de las m&#225;s populares en la visi&#243;n artificial. El proceso es necesario para revertir distorsiones en las im&#225;genes causadas por la naturaleza mec&#225;nica y electr&#243;nica de las c&#225;maras digitales. Imagen tomada de <TT><A NAME="tex2html7"
+  HREF="http://meiyou.org/test2011/GSoC/">http://meiyou.org/test2011/GSoC/</A></TT> &#169;.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER">
+
+</DIV><IMG
+  WIDTH="315" HEIGHT="417" ALIGN="BOTTOM" BORDER="0"
+ SRC="./calibration2.png"
+ ALT="Image calibration2"></TD></TR>
+</TABLE>
+</DIV>
+
+<P>
+El proceso de calibraci&#243;n permite determinar una serie de par&#225;metros necesarios para posteriormente corregir distorsiones en las im&#225;genes generadas por el sistema de c&#225;maras [<A NAME="tex2html282" target="contents"
+  HREF="node25.html#Szeliski_2010">34</A>,<A NAME="tex2html283" target="contents"
+  HREF="node25.html#Tsai_1987">36</A>,<A NAME="tex2html284" target="contents"
+  HREF="node25.html#Shah_1983">31</A>,<A NAME="tex2html285" target="contents"
+  HREF="node25.html#Bradski_Kaehler_2008">4</A>]. En la reconstrucci&#243;n 3D se puede utilizar un aparejo con un par de c&#225;maras (estereo visi&#243;n) calibradas a priori. El problema de esta t&#233;cnica est&#225; en la dificultad de construir el aparejo y posicionar ambas c&#225;maras con amplia precisi&#243;n para obtener resultados aceptables en las im&#225;genes estereosc&#243;picas, limitando as&#237; el uso pr&#225;ctico del sistema [<A NAME="tex2html286" target="contents"
+  HREF="node25.html#Faugeras_Luong_2001">12</A>,<A NAME="tex2html287" target="contents"
+  HREF="node25.html#Faugeras_Toscani_1986">10</A>,<A NAME="tex2html288" target="contents"
+  HREF="node25.html#Faugeras_1993">11</A>]. Por otro lado, es posible utilizar una secuencia de imágenes monosc&#243;picas no calibradas generadas por una &#250;nica c&#225;mara y realizar la calibraci&#243;n a partir de estos datos (auto-calibraci&#243;n) [<A NAME="tex2html289" target="contents"
+  HREF="node25.html#Hartley_Zisserman_2003">17</A>,<A NAME="tex2html290" target="contents"
+  HREF="node25.html#Maybank_Faugeras_1992">22</A>,<A NAME="tex2html291" target="contents"
+  HREF="node25.html#Hartley_1993">18</A>,<A NAME="tex2html292" target="contents"
+  HREF="node25.html#Werner_Zisserman_2002">37</A>].
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html276"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html272"
+  HREF="node8.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html266"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html274"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html277"
+  HREF="node10.html">Estimaci&#243;n de la profundidad</A>
+<B> Up:</B> <A NAME="tex2html273"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+<B> Previous:</B> <A NAME="tex2html267"
+  HREF="node8.html">Reconstrucci&#243;n 3D</A>
+ &nbsp; <B>  <A NAME="tex2html275"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Randy Saborio
+2012-02-25
+</ADDRESS>
+</BODY>
+</HTML>

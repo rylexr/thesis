@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Planteamiento del problema</TITLE>
+<META NAME="description" CONTENT="Planteamiento del problema">
+<META NAME="keywords" CONTENT="main">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="main.css">
+
+<LINK REL="next" HREF="node13.html">
+<LINK REL="previous" HREF="node6.html">
+<LINK REL="up" HREF="node4.html">
+<LINK REL="next" HREF="node13.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html337"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html333"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html327"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html335"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html338"
+  HREF="node13.html">Hip&#243;tesis</A>
+<B> Up:</B> <A NAME="tex2html334"
+  HREF="node4.html">Introducci&#243;n y antecedentes</A>
+<B> Previous:</B> <A NAME="tex2html328"
+  HREF="node11.html">Construcci&#243;n del modelo tridimensional</A>
+ &nbsp; <B>  <A NAME="tex2html336"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00430000000000000000">
+Planteamiento del problema</A>
+</H1>
+Los elevados costos de producci&#243;n, la duraci&#243;n y la utilizaci&#243;n de equipo y personal especializado en la creaci&#243;n de modelos tridimensionales son problemas vigentes del &#225;rea de gr&#225;ficos por computador. A pesar de existir t&#233;cnicas semiautomatizadas para la creaci&#243;n de estos modelos [<A NAME="tex2html339" target="contents"
+  HREF="node25.html#Scott_Roth_Rivest_2003">30</A>,<A NAME="tex2html340" target="contents"
+  HREF="node25.html#wiki:Janus_machine">23</A>], los m&#233;todos actuales poseen una serie de inconvenientes que conllevan a que su generaci&#243;n se realice por m&#233;todos laboriosos o de forma manual. Esto, unido a la gran demanda de modelos tridimensionales virtuales de objetos f&#237;sicos, hace que la creaci&#243;n de t&#233;cnicas pr&#225;cticas para resolver o minimizar parte de estos problemas sea una necesidad.
+
+<P>
+En la actualidad, existen t&#233;cnicas en el &#225;rea de la visi&#243;n artificial que permiten realizar reconstrucciones tridimensionales altamente detalladas y precisas [<A NAME="tex2html341" target="contents"
+  HREF="node25.html#Scott_Roth_Rivest_2003">30</A>,<A NAME="tex2html342" target="contents"
+  HREF="node25.html#Bardsley_2008">2</A>,<A NAME="tex2html343" target="contents"
+  HREF="node25.html#Labatut_Pons_Keriven_2007">1</A>]. Su problema radica en que son computacionalmente intensivas y la creaci&#243;n del modelo tridimensional toma mucho tiempo. Generalmente, este tipo de t&#233;cnicas se dividen en dos fases: una fase de captura de video o im&#225;genes del modelo (r&#225;pida) y posteriormente, una fase de reconstrucci&#243;n laboriosa (lenta) del modelo tridimensional. Si al finalizar esta fase el modelo obtenido es defectuoso, se deber&#225; obtener nuevamente una secuencia de im&#225;genes o video del objeto y repetir la fase de reconstrucci&#243;n. El proceso podr&#237;a repetirse una y otra vez durante varias horas hasta lograr obtener el modelo m&#225;s cercano a lo esperado [<A NAME="tex2html344" target="contents"
+  HREF="node25.html#pan2009ProFORMA">27</A>,<A NAME="tex2html345" target="contents"
+  HREF="node25.html#Jahne_Haussecker_Geibler_1999">20</A>].
+
+<P>
+Este trabajo se enfoca en desarrollar una t&#233;cnica pasiva que permita la reconstrucci&#243;n r&#225;pida de un objeto tridimensional r&#237;gido, utilizando una c&#225;mara convencional de bajo costo m&#225;s una serie de t&#233;cnicas del campo de la visi&#243;n artificial. La t&#233;cnica deber&#225; aprovechar toda la informaci&#243;n disponible (geometr&#237;a, textura, volumen, entre otros) del objeto para lograr una reconstrucci&#243;n aceptable en el menor tiempo posible. Adem&#225;s, deber&#225; ser capaz de reconstruir el objeto conforme la informaci&#243;n de &#233;ste es capturada. Con dicha t&#233;cnica se pretende reducir los costos del proceso, al no requerir de equipo ni personal especializado, as&#237; como reducir el tiempo que toma la reconstrucci&#243;n de un modelo 3D.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html337"
+  HREF="node13.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html333"
+  HREF="node4.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html327"
+  HREF="node11.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html335"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html338"
+  HREF="node13.html">Hip&#243;tesis</A>
+<B> Up:</B> <A NAME="tex2html334"
+  HREF="node4.html">Introducci&#243;n y antecedentes</A>
+<B> Previous:</B> <A NAME="tex2html328"
+  HREF="node11.html">Construcci&#243;n del modelo tridimensional</A>
+ &nbsp; <B>  <A NAME="tex2html336"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+Randy Saborio
+2012-02-25
+</ADDRESS>
+</BODY>
+</HTML>

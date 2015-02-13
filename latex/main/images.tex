@@ -1,0 +1,333 @@
+\batchmode
+
+
+\documentclass[12pt,letterpaper,twoside,openright]{book}
+\RequirePackage{ifthen}
+
+
+
+
+\usepackage[spanish,english]{babel}
+
+
+\usepackage{mathpazo} 
+\linespread{1.05}        % Palatino needs more leading (space between lines)
+\usepackage[scaled]{helvet} 
+\usepackage{courier} 
+\normalfont
+\usepackage[T1]{fontenc}
+
+
+\usepackage{subfig}
+
+
+\usepackage{indentfirst}
+
+
+\raggedbottom
+
+
+\usepackage[hmargin={3.5cm,2.5cm},vmargin=2.5cm]{geometry}
+
+
+\usepackage{natbib}
+\bibpunct{[}{]}{,}{n}{,}{,}
+
+
+\usepackage{setspace}
+
+
+\usepackage[pdftex]{graphicx}
+
+
+\usepackage[utf8x]{inputenc}
+
+
+\usepackage[Sonny]{fncychap} 
+\ChNameUpperCase
+\ChNameVar{\raggedleft\huge\rm }
+\ChRuleWidth{1pt}
+\ChTitleUpperCase
+\ChNumVar{\raggedleft\bfseries\huge }
+\ChTitleVar{\raggedleft\Large\rm }
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
+\usepackage{fancyhdr}
+
+
+\usepackage{mdwlist}
+\usepackage{alltt}
+\usepackage[dvips, bookmarks=true,linktoc=all, colorlinks=false, pdftitle={Modelado r\'{a}pido de objetos tridimensionales}, pdfauthor={Randy Saborio}, pdfsubject={Modelado r\'{a}pido de objetos tridimensionales}, pdfkeywords={Tesis, Visión Artificial, 3D, Linux, OpenCV, Reconstrucción 3D},linkcolor=blue,filecolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+
+
+\usepackage{epigraph}
+
+
+
+%
+\newenvironment{abstract}%
+{\cleardoublepage\null \vfill \begin{center}%
+\bfseries \abstractname \end{center}}
+{\vfill\null} 
+
+
+\usepackage{nomencl}
+\makenomenclature
+
+
+\usepackage{acronym}
+
+
+\usepackage{color}
+
+%
+\providecommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+
+
+
+
+
+\pagecolor[gray]{.7}
+
+\usepackage[latin1]{inputenc}
+
+
+
+\makeatletter
+\AtBeginDocument{\makeatletter
+\input /home/rylexr/Documents/ITCR/Tesis/LateX/Proposal/main.aux
+\makeatother
+}
+
+\makeatletter
+\count@=\the\catcode`\_ \catcode`\_=8 
+\newenvironment{tex2html_wrap}{}{}%
+\catcode`\<=12\catcode`\_=\count@
+\newcommand{\providedcommand}[1]{\expandafter\providecommand\csname #1\endcsname}%
+\newcommand{\renewedcommand}[1]{\expandafter\providecommand\csname #1\endcsname{}%
+  \expandafter\renewcommand\csname #1\endcsname}%
+\newcommand{\newedenvironment}[1]{\newenvironment{#1}{}{}\renewenvironment{#1}}%
+\let\newedcommand\renewedcommand
+\let\renewedenvironment\newedenvironment
+\makeatother
+\let\mathon=$
+\let\mathoff=$
+\ifx\AtBeginDocument\undefined \newcommand{\AtBeginDocument}[1]{}\fi
+\newbox\sizebox
+\setlength{\hoffset}{0pt}\setlength{\voffset}{0pt}
+\addtolength{\textheight}{\footskip}\setlength{\footskip}{0pt}
+\addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
+\addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
+\addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
+\setlength{\textwidth}{349pt}
+\newwrite\lthtmlwrite
+\makeatletter
+\let\realnormalsize=\normalsize
+\global\topskip=2sp
+\def\preveqno{}\let\real@float=\@float \let\realend@float=\end@float
+\def\@float{\let\@savefreelist\@freelist\real@float}
+\def\liih@math{\ifmmode$\else\bad@math\fi}
+\def\end@float{\realend@float\global\let\@freelist\@savefreelist}
+\let\real@dbflt=\@dbflt \let\end@dblfloat=\end@float
+\let\@largefloatcheck=\relax
+\let\if@boxedmulticols=\iftrue
+\def\@dbflt{\let\@savefreelist\@freelist\real@dbflt}
+\def\adjustnormalsize{\def\normalsize{\mathsurround=0pt \realnormalsize
+ \parindent=0pt\abovedisplayskip=0pt\belowdisplayskip=0pt}%
+ \def\phantompar{\csname par\endcsname}\normalsize}%
+\def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
+\newcommand\lthtmlhboxmathA{\adjustnormalsize\setbox\sizebox=\hbox\bgroup\kern.05em }%
+\newcommand\lthtmlhboxmathB{\adjustnormalsize\setbox\sizebox=\hbox to\hsize\bgroup\hfill }%
+\newcommand\lthtmlvboxmathA{\adjustnormalsize\setbox\sizebox=\vbox\bgroup %
+ \let\ifinner=\iffalse \let\)\liih@math }%
+\newcommand\lthtmlboxmathZ{\@next\next\@currlist{}{\def\next{\voidb@x}}%
+ \expandafter\box\next\egroup}%
+\newcommand\lthtmlmathtype[1]{\gdef\lthtmlmathenv{#1}}%
+\newcommand\lthtmllogmath{\dimen0\ht\sizebox \advance\dimen0\dp\sizebox
+  \ifdim\dimen0>.95\vsize
+   \lthtmltypeout{%
+*** image for \lthtmlmathenv\space is too tall at \the\dimen0, reducing to .95 vsize ***}%
+   \ht\sizebox.95\vsize \dp\sizebox\z@ \fi
+  \lthtmltypeout{l2hSize %
+:\lthtmlmathenv:\the\ht\sizebox::\the\dp\sizebox::\the\wd\sizebox.\preveqno}}%
+\newcommand\lthtmlfigureA[1]{\let\@savefreelist\@freelist
+       \lthtmlmathtype{#1}\lthtmlvboxmathA}%
+\newcommand\lthtmlpictureA{\bgroup\catcode`\_=8 \lthtmlpictureB}%
+\newcommand\lthtmlpictureB[1]{\lthtmlmathtype{#1}\egroup
+       \let\@savefreelist\@freelist \lthtmlhboxmathB}%
+\newcommand\lthtmlpictureZ[1]{\hfill\lthtmlfigureZ}%
+\newcommand\lthtmlfigureZ{\lthtmlboxmathZ\lthtmllogmath\copy\sizebox
+       \global\let\@freelist\@savefreelist}%
+\newcommand\lthtmldisplayA{\bgroup\catcode`\_=8 \lthtmldisplayAi}%
+\newcommand\lthtmldisplayAi[1]{\lthtmlmathtype{#1}\egroup\lthtmlvboxmathA}%
+\newcommand\lthtmldisplayB[1]{\edef\preveqno{(\theequation)}%
+  \lthtmldisplayA{#1}\let\@eqnnum\relax}%
+\newcommand\lthtmldisplayZ{\lthtmlboxmathZ\lthtmllogmath\lthtmlsetmath}%
+\newcommand\lthtmlinlinemathA{\bgroup\catcode`\_=8 \lthtmlinlinemathB}
+\newcommand\lthtmlinlinemathB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA
+  \vrule height1.5ex width0pt }%
+\newcommand\lthtmlinlineA{\bgroup\catcode`\_=8 \lthtmlinlineB}%
+\newcommand\lthtmlinlineB[1]{\lthtmlmathtype{#1}\egroup\lthtmlhboxmathA}%
+\newcommand\lthtmlinlineZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetinline}
+\newcommand\lthtmlinlinemathZ{\egroup\expandafter\ifdim\dp\sizebox>0pt %
+  \expandafter\centerinlinemath\fi\lthtmllogmath\lthtmlsetmath}
+\newcommand\lthtmlindisplaymathZ{\egroup %
+  \centerinlinemath\lthtmllogmath\lthtmlsetmath}
+\def\lthtmlsetinline{\hbox{\vrule width.1em \vtop{\vbox{%
+  \kern.1em\copy\sizebox}\ifdim\dp\sizebox>0pt\kern.1em\else\kern.3pt\fi
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\lthtmlsetmath{\hbox{\vrule width.1em\kern-.05em\vtop{\vbox{%
+  \kern.1em\kern0.8 pt\hbox{\hglue.17em\copy\sizebox\hglue0.8 pt}}\kern.3pt%
+  \ifdim\dp\sizebox>0pt\kern.1em\fi \kern0.8 pt%
+  \ifdim\hsize>\wd\sizebox \hrule depth1pt\fi}}}
+\def\centerinlinemath{%
+  \dimen1=\ifdim\ht\sizebox<\dp\sizebox \dp\sizebox\else\ht\sizebox\fi
+  \advance\dimen1by.5pt \vrule width0pt height\dimen1 depth\dimen1 
+ \dp\sizebox=\dimen1\ht\sizebox=\dimen1\relax}
+
+\def\lthtmlcheckvsize{\ifdim\ht\sizebox<\vsize 
+  \ifdim\wd\sizebox<\hsize\expandafter\hfill\fi \expandafter\vfill
+  \else\expandafter\vss\fi}%
+\providecommand{\selectlanguage}[1]{}%
+\makeatletter \tracingstats = 1 
+
+
+\begin{document}
+\pagestyle{empty}\thispagestyle{empty}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hsize=\the\hsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength vsize=\the\vsize}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength hoffset=\the\hoffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength voffset=\the\voffset}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topmargin=\the\topmargin}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength topskip=\the\topskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headheight=\the\headheight}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength headsep=\the\headsep}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength parskip=\the\parskip}\lthtmltypeout{}%
+\lthtmltypeout{latex2htmlLength oddsidemargin=\the\oddsidemargin}\lthtmltypeout{}%
+\makeatletter
+\if@twoside\lthtmltypeout{latex2htmlLength evensidemargin=\the\evensidemargin}%
+\else\lthtmltypeout{latex2htmlLength evensidemargin=\the\oddsidemargin}\fi%
+\lthtmltypeout{}%
+\makeatother
+\setcounter{page}{1}
+\onecolumn
+
+% !!! IMAGES START HERE !!!
+
+{\newpage\clearpage
+\lthtmlinlineA{tex2html_nomath_inline1909}%
+\textquestiondown%
+\lthtmlinlineZ
+\lthtmlcheckvsize\clearpage}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+{\newpage\clearpage
+\lthtmlpictureA{tex2html_wrap2490}%
+\includegraphics[width=0.3\textwidth]{images/logotec}%
+\lthtmlpictureZ
+\lthtmlcheckvsize\clearpage}
+
+
+
+\selectlanguage{spanish}
+
+
+
+\selectlanguage{spanish}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{itemizestar322}%
+\begin{itemize*}
+\item La detecci\'{o}n, segmentaci\'{o}n, localizaci\'{o}n y reconocimiento de ciertos objetos en im\'{a}genes (por ejemplo, caras humanas). 
+\item La evaluaci\'{o}n de los resultados (por ejemplo, segmentaci\'{o}n, registro). 
+\item Registro de diferentes im\'{a}genes de una misma escena u objeto, es decir, hacer concordar un mismo objeto en diversas im\'{a}genes. 
+\item Seguimiento de un objeto en una secuencia de im\'{a}genes. 
+\item Mapeo de una escena para generar un modelo tridimensional; este modelo podr\'{i}a ser usado por un robot para navegar por la escena. 
+\item Estimaci\'{o}n de las posturas tridimensionales de humanos. 
+\item B\'{u}squeda de im\'{a}genes digitales por su contenido. 
+\end{itemize*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{itemizestar821}%
+\begin{itemize*}
+\item Desarrollar algoritmos para reconstruir el objeto 3D conforme la informaci\'{o}n de \'{e}ste es capturada.
+\item Establecer la relaci\'{o}n entre resoluci\'{o}n de im\'{a}genes y tiempo de reconstrucci\'{o}n 3D.
+\item Establecer la relación entre caracter\'{i}sticas f\'{i}sicas (tamaño, forma, color, textura) del objeto y tiempo de reconstrucci\'{o}n 3D.
+\item Establecer la relaci\'{o}n entre calibraci\'{o}n y calidad de la reconstrucci\'{o}n 3D.
+\item Analizar y valorar t\'{e}cnicas actuales de reconstrucci\'{o}n 3D.
+\item Mantener considerablemente bajo el costo global del sistema.
+\end{itemize*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{itemizestar865}%
+\begin{itemize*}
+\item Reconstrucci\'{o}n de objetos no r\'{i}gidos.
+\item Reconstrucci\'{o}n de objetos con un ancho, alto y profundidad mayor a 30cm.
+\item Reconstrucci\'{o}n de objetos con texturas muy uniformes.
+\item Reconstrucci\'{o}n de objetos con estructuras muy irregulares.
+\item Etapas posteriores a la triangulaci\'{o}n (\emph{bundle adjusment}, \emph{texturing}).
+\item Utilizaci\'{o}n de equipo especializado (c\'{a}maras infrarrojas, de profundidad, proyectores, entre otros) o computadores de alto rendimiento.
+\end{itemize*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+{\newpage\clearpage
+\lthtmlfigureA{enumeratestar935}%
+\begin{enumerate*}
+\item Prototipo funcional del sistema de reconstrucci\'{o}n de objetos tridimensionales.
+\item Una video-presentaci\'{o}n mostrando la reconstrucci\'{o}n de objetos tri\-di\-men\-sio\-na\-les utilizando el sistema.
+\end{enumerate*}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+\stepcounter{section}
+\refstepcounter{chapter}
+\stepcounter{chapter}
+{\newpage\clearpage
+\lthtmlfigureA{acronym1001}%
+\begin{acronym}
+\par
+\acro{2D}{Bidimensional} es que posee dos dimensiones.
+\par
+\acro{3D}{Tridimensional} es que posee tres dimensiones.
+\par
+\acro{CCD}{Charge-Coupled Device} es un circuito integrado que contiene un número determinado de condensadores enlazados o acoplados. Bajo el control de un circuito interno, cada condensador puede transferir su carga eléctrica a uno o a varios de los condensadores que estén a su lado en el circuito impreso.
+\par
+\acro{SLAM}{Simultaneous Localization And Mapping} es una t\'{e}cnica usada por robots y veh\'{i}culos aut\'{o}nomos para construir un mapa de un entorno desconocido en el que se encuentra, a la vez que estima su trayectoria al desplazarse dentro de este entorno.
+\par
+\end{acronym}%
+\lthtmlfigureZ
+\lthtmlcheckvsize\clearpage}
+
+
+\end{document}

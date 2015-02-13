@@ -1,0 +1,106 @@
+% Language support
+\usepackage[spanish,english]{babel}
+
+% Palatino for rm and math | Helvetica for ss | Courier for tt
+\usepackage{mathpazo} % math & rm
+\linespread{1.05}        % Palatino needs more leading (space between lines)
+\usepackage[scaled]{helvet} % ss
+\usepackage{courier} % tt
+\normalfont
+\usepackage[T1]{fontenc}
+% For subfloat of images
+\usepackage{subfig}
+
+\usepackage[absolute]{textpos}
+
+\usepackage{float}
+
+% For code
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{
+  basicstyle=\small\ttfamily,
+  commentstyle=\textit,
+  escapeinside={\%*}{*)'},
+  morekeywords={*, reconstructor_3d, calibrar_camara, capturar_vistas, pareo_de_caracteristicas, ejecutar, eliminar_pareos, calcular_matrices_de_camara, triangular_puntos, encontrar_triangulacion_base, triangular_mas_vistas}
+}
+
+
+% For spanish we need indentation on the first line
+\usepackage{indentfirst}
+
+% Prevent latex from expanding to fill page
+\raggedbottom
+
+%Use the margins requested
+\usepackage[hmargin={3.5cm,2.5cm},vmargin=2.5cm]{geometry}
+
+%Improved bibliography
+\usepackage{natbib}
+\bibpunct{[}{]}{,}{n}{,}{,}
+
+% To define spacing
+\usepackage{setspace}
+
+% We use these packages for making the nice logo on the title page
+\usepackage[pdftex]{graphicx}
+
+% Use input characters instead of scape codes
+\usepackage[utf8x]{inputenc}
+
+% Generate fancy chapter titles
+\usepackage[Sonny]{fncychap} %Sonny, Glenn, Lenny, Conny, Rejne, Bjarne, PetersLenny
+\ChNameUpperCase
+\ChNameVar{\raggedleft\huge\rm}
+\ChRuleWidth{1pt}
+\ChTitleUpperCase
+\ChNumVar{\raggedleft\bfseries\huge}
+\ChTitleVar{\raggedleft\Large\rm}
+
+% More depth on table of content
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
+
+%Use Fancy headers
+\usepackage{fancyhdr}
+
+% Generate pretty PDF with links on the TOC
+\usepackage{mdwlist}
+\usepackage{alltt}
+\usepackage[dvips, bookmarks=true,linktoc=all, colorlinks=false, pdftitle={\thesistitle}, pdfauthor={\pdfauthor}, pdfsubject={\thesistitle}, pdfkeywords={\thesiskeywords},
+linkcolor=blue,filecolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+
+% Allow epigraphs at the beginning of chapters
+\usepackage{epigraph}
+
+% Define abstract environment since it doesn't exists on book class
+\newenvironment{abstract}%
+{\cleardoublepage\null \vfill \begin{center}%
+\bfseries \abstractname \end{center}}
+{\vfill\null}
+
+% Generation of nomenclature
+\usepackage{nomencl}
+\makenomenclature
+
+% Generation of acronyms
+\usepackage{acronym}
+
+% For color definitions
+\usepackage{color}
+
+% Comment this out when is not a draft
+%\usepackage{draftwatermark}
+%\SetWatermarkLightness{0.95}
+%\SetWatermarkFontSize{5cm}
+%\SetWatermarkScale{5}
+%\SetWatermarkText{DRAFT}
+
+% Custom commands
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\degree}{\ensuremath{^\circ}}
