@@ -15,10 +15,10 @@ computer vision, fast 3D dense reconstruction
 
 Some videos of the technique
 ----------------------------
-https://www.youtube.com/watch?v=KWHvYrKSWlY
-https://www.youtube.com/watch?v=QNWGJnPHDVQ
-https://www.youtube.com/watch?v=Fswoi420_NQ
-https://www.youtube.com/watch?v=udrLyqW9mQw
+https://www.youtube.com/watch?v=KWHvYrKSWlY  
+https://www.youtube.com/watch?v=QNWGJnPHDVQ  
+https://www.youtube.com/watch?v=Fswoi420_NQ  
+https://www.youtube.com/watch?v=udrLyqW9mQw  
 
 
 If you find this document useful buy Randy Saborio a beer.
